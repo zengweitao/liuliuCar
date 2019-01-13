@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/r_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_above="@android:id/tabs"
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/white"
+                    android:divider="@null">
+
+                </TabWidget>
+
+                <com.cheweibao.liuliu.ui.RoundedImageView
+                    android:id="@+id/iv_publish"
+                    android:paddingLeft="10dp" android:paddingRight="10dp"
+                    android:layout_width="65dp" android:layout_centerInParent="true"
+                    android:layout_height="45dp" android:src="@drawable/icon_publish"
+                    app:is_oval="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

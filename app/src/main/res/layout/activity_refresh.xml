@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:enabled="false"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/tv_refresh_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_no_net" />
+
+    <TextView
+        android:id="@+id/tv_refresh_content"
+        style="@style/textview_style_black13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dip" />
+
+    <RelativeLayout
+        android:id="@+id/rl_btn"
+        android:layout_width="256dp"
+        android:layout_height="50dip"
+        android:layout_below="@+id/tv_refresh_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/btn_blue_3_br">
+
+        <TextView
+            style="@style/textview_style_white16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_refresh"
+            android:gravity="center"
+            android:text="  刷新" />
+    </RelativeLayout>
+
+</RelativeLayout>

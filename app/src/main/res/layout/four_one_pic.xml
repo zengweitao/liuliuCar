@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right">
+
+
+    <LinearLayout
+        style="@style/layout_style_mwv"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            style="@style/layout_style_mwv"
+            android:layout_marginLeft="15dp"
+            android:gravity="right">
+
+            <RadioGroup
+                android:id="@+id/fadongji_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/fo_camera_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/bg_cam_btn" />
+
+                <RadioButton
+                    android:id="@+id/ok_rd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:text="正常"
+                    android:textSize="14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/qingwei_rd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="轻微"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/yanzhong_rd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="严重"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/uncheck_rd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="未查"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

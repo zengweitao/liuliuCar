@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="50dp"
+    android:layout_weight="1"
+    android:background="@color/tab_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tab_top_line" />
+
+    <ImageView
+        android:id="@+id/ivTabIcon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="false"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/selector_tab1" />
+
+    <TextView
+        android:id="@+id/ivTabTitle"
+        style="@style/tab_textview_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="消息"
+        android:textColor="@drawable/selector_tab_text" />
+
+    <TextView
+        android:id="@+id/tvItemTip"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/ivTabTitle"
+        android:background="@drawable/circle_red"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="2"
+        android:textColor="#ffffffff"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

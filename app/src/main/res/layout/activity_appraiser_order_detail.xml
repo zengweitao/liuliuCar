@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    style="@style/layout_style_mmv"
+    android:background="@color/white_gray">
+
+
+    <LinearLayout style="@style/layout_style_mmv">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/layout_top_blue" />
+
+        <com.cheweibao.liuliu.ui.ScrollViewExt
+            android:id="@+id/svMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/title_layout"
+            android:layout_weight="1">
+
+            <LinearLayout style="@style/layout_style_mwv">
+
+                <LinearLayout
+                    style="@style/layout_style_mwv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_order_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_order_no"
+                            style="@style/textview_style_black13"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="订单编号：" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_start_date"
+                            style="@style/textview_style_black13"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="发起时间：" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            style="@style/textview_style_black13"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/white"
+                            android:hint="主贷人姓名"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_mileage"
+                            style="@style/textview_style_black13"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/white"
+                            android:hint="请输入里程数"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_car_type"
+                            style="@style/textview_style_black13"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="车辆型号" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cjt_arrow_d" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_style_mwh"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview_white_br"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_date"
+                                style="@style/textview_style_black13"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="2dp"
+                                android:background="@color/white"
+                                android:hint="上牌时间" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview_white_br"
+                            android:orientation="horizontal"
+                            android:paddingRight="15dp">
+
+                            <Spinner
+                                android:id="@+id/sp_pl"
+                                style="@style/textview_style_black13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingRight="10dp"
+                                android:singleLine="true" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/cjt_arrow_d" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_car_area"
+                            style="@style/textview_style_black13"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="车牌归所地" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cjt_arrow_d" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <Spinner
+                            android:id="@+id/sp_car_status"
+                            style="@style/textview_style_black13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/cjt_arrow_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br"
+                        android:orientation="horizontal"
+                        android:paddingRight="15dp">
+
+                        <Spinner
+                            android:id="@+id/sp_bank"
+                            style="@style/textview_style_black13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:spinnerMode="dialog" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/cjt_arrow_d" />
+                    </RelativeLayout>
+
+                    <GridLayout
+                        android:id="@+id/gl_img"
+                        style="@style/layout_style_mw"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:columnCount="2">
+
+                    </GridLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+        <LinearLayout
+            style="@style/layout_style_mwv"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_new"
+                style="@style/layout_style_mwh">
+
+                <Button
+                    android:id="@+id/btn_set_price"
+                    style="@style/textview_style_white15"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue"
+                    android:text="预估价格"
+                    android:textColor="@drawable/text_enable_black_white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_dlg"
+        style="@style/layout_style_mmv"
+        android:background="@color/black_a30"
+        android:visibility="gone">
+
+        <LinearLayout
+            style="@style/layout_style_mwv"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_white_r10"
+            android:padding="5dp">
+
+            <RelativeLayout
+                style="@style/layout_style_mwh"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_centerInParent="true"
+                    android:text="评估价" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_close" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mwh"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_textview_gray_br">
+
+                <EditText
+                    android:id="@+id/et_price"
+                    style="@style/textview_style_black14"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:background="@color/white_gray"
+                    android:hint="输入预估价格"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    style="@style/textview_style_black14"
+                    android:layout_gravity="center_vertical"
+                    android:text="元"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mwh"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_textview_gray_br">
+
+                <EditText
+                    android:id="@+id/et_suffix"
+                    style="@style/textview_style_black14"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:background="@color/white_gray"
+                    android:hint="车架号后六位（有证件必填）"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mwh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/textview_style_gray14"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="right"
+                    android:text="存在车架号，" />
+
+                <TextView
+                    android:id="@+id/tv_show_same"
+                    style="@style/textview_style_black14"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:text="立即查看"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style_mwh">
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/textview_style_white15"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_3_br"
+                    android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

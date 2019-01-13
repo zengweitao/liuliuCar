@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/title_layout">
+
+        <LinearLayout
+            style="@style/layout_style_mmv"
+            android:background="@color/activity_background">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:layout_below="@+id/staging_scheme">
+
+                <include
+                    layout="@layout/item_choose_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/layout_style_mw"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip">
+
+                <TextView
+                    android:id="@+id/staging_scheme"
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/staging_scheme"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_event"
+                    style="@style/textview_style_green12"
+                    android:layout_alignBottom="@+id/staging_scheme"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toEndOf="@+id/staging_scheme"
+                    android:layout_toRightOf="@+id/staging_scheme"
+                    android:text="@string/welfare"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_staging_scheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/staging_scheme"
+                    android:layout_marginTop="10dip">
+
+                    <include
+                        layout="@layout/item_gv_staging_scheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_additional_conditions"
+                    style="@style/textview_style_gray12"
+                    android:layout_below="@+id/layout_staging_scheme"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/icon_prompt"
+                    android:gravity="center"
+                    android:text="@string/additional_conditions"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_service_charge"
+                    style="@style/textview_style_green12"
+                    android:layout_alignBaseline="@+id/tv_additional_conditions"
+                    android:layout_toRightOf="@+id/tv_additional_conditions"
+                    android:text="2900元"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_store"
+                style="@style/layout_style_mwh"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/selector_white_gray"
+                android:gravity="center_vertical"
+                android:padding="10dip">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/buy_car_store"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_gray13"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/more_car_store"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:src="@drawable/icon_go" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip">
+
+                <include
+                    layout="@layout/item_rv_car_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/textview_style_black16"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/white"
+                android:gravity="center_vertical"
+                android:padding="10dip"
+                android:text="@string/tv_purchaser"
+                android:textSize="16sp" />
+
+            <View style="@style/a_layout_style_hline" />
+
+            <LinearLayout
+                style="@style/layout_style_mwv"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/white"
+                android:padding="10dip">
+
+                <TextView
+                    android:id="@+id/tv_purchaser"
+                    style="@style/textview_style_gray12"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_id_card"
+                    style="@style/textview_style_gray12"
+                    android:layout_marginTop="5dip"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_numbers"
+                    style="@style/textview_style_gray12"
+                    android:layout_marginTop="5dip"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_choose_pay"
+                style="@style/layout_style_mwv"
+                android:layout_marginBottom="20dip"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dip"
+                    android:text="@string/tv_payment_method"
+                    android:textSize="16sp" />
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    style="@style/layout_style_mwh"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_alipay"
+                        style="@style/layout_style_mwh"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white_gray"
+                        android:gravity="center_vertical"
+                        android:padding="20dip">
+
+                        <ImageView
+                            android:id="@+id/select_alipay"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_select" />
+
+                        <ImageView
+                            android:layout_width="100dip"
+                            android:layout_height="30dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_alipay" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_weixin"
+                        style="@style/layout_style_mwh"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white_gray"
+                        android:gravity="center_vertical"
+                        android:padding="20dip">
+
+                        <ImageView
+                            android:id="@+id/select_weixin"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_unselect" />
+
+                        <ImageView
+                            android:layout_width="100dip"
+                            android:layout_height="30dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_weixin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <View
+        style="@style/a_layout_style_hline"
+        android:layout_above="@+id/ll_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/layout_style_mwh"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_wait"
+            style="@style/layout_style_mwh"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_in_review"
+                style="@style/textview_style_white18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tv_must"
+                android:gravity="center"
+                android:minHeight="40dip"
+                android:text="@string/in_review" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay"
+            style="@style/layout_style_mwh"
+            android:visibility="visible">
+
+            <LinearLayout
+                style="@style/layout_style_mwh"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:padding="10dip">
+
+                <TextView
+                    style="@style/textview_style_green15"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="1dip"
+                    android:text="@string/tv_total"
+                    android:textColor="@color/tv_green"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_actual_price"
+                    style="@style/textview_style_green18"
+                    android:gravity="bottom"
+                    android:textColor="@color/tv_green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/textview_style_green15"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="1dip"
+                    android:text="元"
+                    android:textColor="@color/tv_green"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/textview_style_green"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="1dip"
+                    android:text="@string/tv_ps_thr_pay"
+                    android:textColor="@color/tv_green"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_purchase"
+                style="@style/textview_style_white18"
+                android:layout_width="140dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_blue_3"
+                android:gravity="center"
+                android:minHeight="40dip"
+                android:text="@string/tv_immediate_pay" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/refresh"
+        layout="@layout/activity_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/waiting_include"
+        layout="@layout/waiting_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

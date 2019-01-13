@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dip"
+				android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:text="TextView"
+		        android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/fd_camera_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/bg_cam_btn" />
+
+			<LinearLayout style="@style/layout_style_mwv" android:layout_marginRight="5dp">
+				<LinearLayout style="@style/layout_style_mmh">
+					<CheckBox
+						android:id="@+id/zz_cb"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentTop="true"
+						android:text="褶皱"
+						android:layout_marginLeft="8dip"
+						android:textSize="14sp" />
+					<CheckBox
+						android:id="@+id/sh_cb"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentTop="true"
+						android:layout_toLeftOf="@+id/zz_btn"
+						android:text="烧焊"
+						android:layout_marginLeft="8dip"
+						android:textSize="14sp" />
+					<CheckBox
+						android:id="@+id/gh_cb"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentTop="true"
+						android:layout_toLeftOf="@+id/sh_btn"
+						android:layout_marginLeft="8dip"
+						android:text="更换"
+						android:textSize="14sp" />
+				</LinearLayout>
+				<LinearLayout style="@style/layout_style_mmh">
+
+					<CheckBox
+						android:id="@+id/nq_cb"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentTop="true"
+						android:layout_toLeftOf="@+id/gh_btn"
+						android:text="扭曲"
+						android:layout_marginLeft="8dip"
+						android:textSize="14sp" />
+					<CheckBox
+						android:id="@+id/bx_cb"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentTop="true"
+						android:layout_marginRight="12dip"
+						android:layout_toLeftOf="@+id/nq_btn"
+						android:layout_marginLeft="8dip"
+						android:text="变形"
+						android:textSize="14sp" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+
+ 		</TableRow> 
+    </TableLayout>
+</RelativeLayout>

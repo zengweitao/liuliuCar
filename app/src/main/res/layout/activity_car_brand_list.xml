@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="p2p"
+            android:textColor="@color/white"
+            android:textSize="18dip" />
+
+        <com.cheweibao.liuliu.ui.ClickEffectImageView
+            android:id="@+id/ivTopBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="6dip"
+            android:paddingTop="8dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/close"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="12dip"
+            android:text="搜索"
+            android:textColor="@drawable/top_right_selectable"
+            android:textSize="16dip"
+            android:visibility="gone" />
+
+        <com.cheweibao.liuliu.ui.ClickEffectImageView
+            android:id="@+id/ivTopRight"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="12dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="15dip"
+            android:paddingTop="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+
+                <com.gjiazhe.wavesidebar.WaveSideBar
+                    android:id="@+id/side_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="70dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="70dp"
+                    app:sidebar_lazy_respond="false"
+                    app:sidebar_max_offset="80dp"
+                    app:sidebar_position="right"
+                    app:sidebar_text_size="12dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_city_type_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="-65dp"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/lin_car_type_biaoti"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_car_type_biaoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/go_back" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_car_type_biaoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/lin_car_type_biaoti"
+                android:background="#FFFFFFFF"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/car_type_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:divider="@drawable/list_item_divider"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_type_empty"
+                style="@style/layout_style_wwv"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dd_icon_wdd" />
+
+                <TextView
+                    style="@style/textview_style_black18"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="暂无数据" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

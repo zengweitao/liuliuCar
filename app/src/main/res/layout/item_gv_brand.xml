@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_style_mm"
+    android:background="@drawable/selector_white_gray">
+
+    <View
+        style="@style/a_layout_style_hline"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        style="@style/a_layout_style_vline"
+        android:layout_alignParentRight="true" />
+
+    <View
+        style="@style/a_layout_style_vline"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        style="@style/layout_style_wwv"
+        android:layout_centerInParent="true"
+        android:padding="10dip">
+
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_item"
+            style="@style/textview_style_black14"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

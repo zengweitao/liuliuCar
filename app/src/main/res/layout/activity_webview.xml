@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    style="@style/layout_style_mmv"
+    android:background="@color/white_gray">
+
+
+    <LinearLayout style="@style/layout_style_mmv">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/layout_top_blue" />
+
+        <com.cheweibao.liuliu.ui.ScrollViewExt
+            android:id="@+id/svMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/title_layout"
+            android:layout_weight="1">
+
+            <LinearLayout style="@style/layout_style_mwv">
+
+                <WebView
+                    android:id="@+id/web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_gray" />
+            </LinearLayout>
+
+        </com.cheweibao.liuliu.ui.ScrollViewExt>
+    </LinearLayout>
+</RelativeLayout>

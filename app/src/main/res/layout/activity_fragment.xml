@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+
+    <LinearLayout style="@style/layout_style_mmv">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/layout_top" />
+
+        <LinearLayout android:id="@+id/llTab" style="@style/layout_style_mw" android:background="@color/white" >
+
+            <com.cheweibao.liuliu.ui.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                android:background="@color/white"
+                app:pstsIndicatorColor="@color/colorPrimary"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsDividerColor="@android:color/transparent"
+                app:pstsUnderlineColor="#00ffffff"
+                app:pstsUnderlineHeight="0dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="0dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

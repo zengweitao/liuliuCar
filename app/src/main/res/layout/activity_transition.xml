@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_transition"
+        android:layout_width="177dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dip" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textview_style_black18"
+        android:layout_above="@+id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tab_nomal" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/textview_style_black13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip" />
+
+    <TextView
+        android:id="@+id/tv_btn"
+        style="@style/textview_style_white16"
+        android:layout_width="256dp"
+        android:layout_height="50dip"
+        android:layout_below="@+id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/btn_blue_3_br"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/textview_style_light_gray14"
+        android:layout_below="@+id/tv_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="@string/tv_failure_payment_back"
+        android:visibility="gone" />
+</RelativeLayout>

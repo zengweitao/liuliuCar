@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/layout_style_mmv"
+                android:id="@+id/ll_main"
+                android:background="@color/white_gray">
+
+
+    <LinearLayout style="@style/layout_style_mmv">
+        <include android:id="@+id/title_layout" layout="@layout/layout_top_blue" />
+
+        <com.cheweibao.liuliu.ui.ScrollViewExt
+            android:id="@+id/svMain" android:layout_below="@+id/title_layout"
+            android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+            <LinearLayout style="@style/layout_style_mwv">
+
+                <LinearLayout style="@style/layout_style_mwv"
+                              android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="0dp">
+                    <LinearLayout android:id="@+id/jz_ll_type"
+                                  android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="35dp" android:layout_marginTop="10dp"
+                                  android:background="@drawable/bg_textview_white_br" android:paddingRight="15dp">
+                        <TextView android:id="@+id/jz_car_type" android:layout_width="0dp" android:layout_weight="1"
+                                  style="@style/textview_style_black13"  android:layout_gravity="center_vertical"
+                                  android:hint="车辆型号"
+                                  android:background="@color/white" android:layout_marginRight="2dp"/>
+                        <ImageView
+                            android:layout_width="20dp" android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cjt_arrow_d"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="35dp" android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_textview_white_br" >
+                        <EditText android:id="@+id/jz_mileage" android:layout_width="match_parent"
+                                  style="@style/textview_style_black13"  android:layout_gravity="center_vertical"
+                                  android:hint="请输入里程数" android:singleLine="true" android:maxLines="1"
+                                  android:background="@color/white"
+                                  android:inputType="numberDecimal" android:layout_marginRight="2dp"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:layout_marginTop="10dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_weight="1"
+                                      android:layout_height="35dp" android:layout_marginRight="10dp"
+                                      android:background="@drawable/bg_textview_white_br" >
+                            <TextView android:id="@+id/jz_date" android:layout_width="match_parent"
+                                      style="@style/textview_style_black13"  android:layout_gravity="center_vertical"
+                                      android:hint="上牌时间"
+                                      android:background="@color/white" android:layout_marginRight="2dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="35dp" android:layout_marginTop="10dp" android:paddingRight="15dp"
+                                  android:background="@drawable/bg_textview_white_br" >
+                        <TextView android:id="@+id/jz_car_area" android:layout_width="0dp" android:layout_weight="1"
+                                  style="@style/textview_style_black13"  android:layout_gravity="center_vertical"
+                                  android:hint="车牌归所地"  android:background="@color/white"
+                                  android:layout_marginRight="2dp"/>
+                        <ImageView
+                            android:layout_width="20dp" android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cjt_arrow_d"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/layout_style_mwh">
+                    <Button android:id="@+id/btn_skip"
+                            style="@style/textview_style_white15"
+                            android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                            android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                            android:text="跳过"
+                            android:background="@drawable/btn_blue_3_br"/>
+                    <Button android:id="@+id/btn_ok"
+                            style="@style/textview_style_white15"
+                            android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                            android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                            android:text="确定"
+                            android:background="@drawable/btn_blue_3_br"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.cheweibao.liuliu.ui.ScrollViewExt>
+    </LinearLayout>
+
+</RelativeLayout>

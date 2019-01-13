@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_style_mmv"
+    android:background="@color/activity_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tablelayout"           android:layout_width="match_parent"
+                android:layout_height="wrap_content"    android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"  android:background="#757475">
+                <TableRow
+                    android:id="@+id/tableRow1" android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView0"   style="@style/layout_style_mw"
+                            android:scaleType="centerCrop"    android:src="@drawable/bg_ww1" />
+                        <TextView android:id="@+id/textView0" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="行驶证" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+
+                    <View style="@style/a_layout_style_vline" android:background="#FF909090"/>
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView1"    style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww2" />
+                        <TextView android:id="@+id/textView1" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="仪表盘" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww3" />
+                        <TextView android:id="@+id/textView2" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="正前整车" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww4" />
+                        <TextView android:id="@+id/textView3" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="左前45度" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww5" />
+                        <TextView android:id="@+id/textView4" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="左侧整车" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww6" />
+                        <TextView android:id="@+id/textView5" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="右后45度" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww7" />
+                        <TextView android:id="@+id/textView6" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="后尾箱整车" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww8" />
+                        <TextView android:id="@+id/textView7" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="右后门拍后座" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww9" />
+                        <TextView android:id="@+id/textView8" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="后座拍中控台整车" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww10" />
+                        <TextView android:id="@+id/textView9" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="右前门派驾驶舱" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww11" />
+                        <TextView android:id="@+id/textView10" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="发动机舱整车" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww12" />
+                        <TextView android:id="@+id/textView11" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="发动机舱（左）" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww13" />
+                        <TextView android:id="@+id/textView12" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="发动机舱（右）" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww14" />
+                        <TextView android:id="@+id/textView13" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="可选" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww14" />
+                        <TextView android:id="@+id/textView14" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="可选" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                    <View android:layout_width="1dip" android:background="#FF909090" android:layout_height="fill_parent" />
+                    <RelativeLayout style="@style/layout_style_w0w">
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            style="@style/layout_style_mw" android:scaleType="centerCrop"
+                            android:src="@drawable/bg_ww14" />
+                        <TextView android:id="@+id/textView15" style="@style/textview_style_white14"
+                            android:layout_width="match_parent" android:padding="5dp" android:layout_alignParentBottom="true"
+                            android:text="可选" android:background="#88000000" android:gravity="center"/>
+                    </RelativeLayout>
+                </TableRow>
+                <View android:layout_width="fill_parent" android:background="#FF909090" android:layout_height="1dip" />
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout style="@style/layout_style_mwv" android:paddingTop="0dp" >
+        <LinearLayout style="@style/layout_style_mwh" >
+            <Button android:id="@+id/btn_save"
+                style="@style/textview_style_white15"
+                android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:text="保存"
+                android:background="@drawable/btn_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

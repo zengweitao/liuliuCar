@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item> <!-- default -->
+        <shape>
+            <solid android:color="@color/transparent" />
+            <stroke android:width="1dp" android:color="@color/tv_green" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+</selector>

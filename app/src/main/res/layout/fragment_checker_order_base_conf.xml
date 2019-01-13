@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style_mmv"
+    android:id="@+id/ll_main"
+    android:background="@color/white">
+
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:id="@+id/svMain" android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout style="@style/layout_style_mwv" android:background="@color/white"
+            android:padding="10dp">
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <LinearLayout style="@style/layout_style_mwh"  android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="铝车毂"
+                            android:layout_marginRight="5dp"/>
+                        <CheckBox
+                            android:id="@+id/hub_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="遥控钥匙"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/smart_key_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="助力转向"
+                            android:layout_marginRight="5dp"/>
+                        <CheckBox
+                            android:id="@+id/power_steering_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="GPS导航"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/gps_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="倒车雷达"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/radar_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="倒车影像"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/video_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="自动泊车"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/auto_park_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="巡航定速"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/cruise_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="ABS"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/abs_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="ESP"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/esp_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="真皮座椅"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/leather_seats_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="座椅加热"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/seat_heating_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="天窗"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/roof_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <TextView style="@style/textview_style_black14" android:text="安全气囊"
+                            android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                        <CheckBox
+                            android:id="@+id/airbag_cb" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_style_mwh" android:gravity="right"
+                        android:layout_width="0dp" android:layout_weight="1">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="空调"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical" android:layout_width="70dp"/>
+                    <LinearLayout style="@style/layout_style_mwh"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <RadioGroup  android:id="@+id/aircon_rg"
+                            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <RadioButton   android:id="@+id/aircon_manual_rb"
+                                android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                                android:checked="true"   android:text="手动" />
+                            <RadioButton  android:id="@+id/aircon_auto_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="电动"  android:layout_marginLeft="15dp"/>
+                            <RadioButton  android:id="@+id/aircon_null_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="无" android:layout_marginLeft="15dp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwv" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="音响"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical" android:layout_width="70dp"/>
+                    <LinearLayout style="@style/layout_style_mwv"
+                        android:layout_width="match_parent" android:layout_weight="1" android:gravity="right">
+                        <RadioGroup  android:id="@+id/sound_rg"
+                            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <RadioButton   android:id="@+id/cd_rb"
+                                android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                                android:checked="true"   android:text="CD" />
+                            <RadioButton  android:id="@+id/dvd_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="DVD"  android:layout_marginLeft="15dp"/>
+                            <RadioButton  android:id="@+id/tape_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="卡带" android:layout_marginLeft="15dp"/>
+                            <RadioButton  android:id="@+id/sound_null_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="无" android:layout_marginLeft="15dp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="变速箱"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical" android:layout_width="70dp"/>
+                    <LinearLayout style="@style/layout_style_mwh"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <RadioGroup  android:id="@+id/gearbox_rg"
+                            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <RadioButton   android:id="@+id/gearbox_manual_rb"
+                                android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                                android:checked="true"   android:text="手动" />
+                            <RadioButton  android:id="@+id/gearbox_auto_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="自动"  android:layout_marginLeft="15dp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="座椅调节"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical" android:layout_width="70dp"/>
+                    <LinearLayout style="@style/layout_style_mwh"
+                        android:layout_width="0dp" android:layout_weight="1">
+                        <RadioGroup  android:id="@+id/seat_adjuster_rg"
+                            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <RadioButton   android:id="@+id/seat_adjuster_manual_rb"
+                                android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                                android:checked="true"   android:text="手动" />
+                            <RadioButton  android:id="@+id/seat_adjuster_auto_rb"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="自动"  android:layout_marginLeft="15dp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <LinearLayout style="@style/layout_style_mwv" android:paddingTop="5dp" >
+        <LinearLayout style="@style/layout_style_mwh" >
+            <Button android:id="@+id/btn_save"
+                style="@style/textview_style_white15"
+                android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:text="保存"
+                android:background="@drawable/btn_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

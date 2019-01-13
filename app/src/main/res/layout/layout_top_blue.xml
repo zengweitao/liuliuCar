@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:text="p2p"
+        android:textColor="@color/tv_black"
+        android:textSize="17sp" />
+
+    <com.cheweibao.liuliu.ui.ClickEffectImageView
+        android:id="@+id/ivTopBack"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dip"
+        android:paddingRight="45dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/title_bar_back" />
+
+    <TextView
+        android:id="@+id/tvTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="12dip"
+        android:text="搜索"
+        android:textColor="@drawable/top_right_selectable"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.cheweibao.liuliu.ui.ClickEffectImageView
+        android:id="@+id/ivTopRight"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="12dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

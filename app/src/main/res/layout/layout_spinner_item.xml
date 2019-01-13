@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rloDlgBack"
+    style="@style/layout_style_mwh">
+
+    <LinearLayout
+        style="@style/layout_style_mwh"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textview_style_gray14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

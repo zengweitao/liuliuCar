@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_marital_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/marital_status"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_marital_status"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_highest_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/highest_education"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_highest_education"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/unit_name"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <com.cheweibao.liuliu.ui.MyEditText
+                        android:id="@+id/et_unit_name"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_unit_name"
+                        android:maxLength="40"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_unit_name"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/work_telephone"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_work_telephone"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_work_telephone"
+                        android:inputType="phone"
+                        android:maxLength="30"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_work_telephone"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_work_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/work_address"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_work_address"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <com.cheweibao.liuliu.ui.MyEditText
+                        android:id="@+id/et_work_address"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_home_address"
+                        android:maxLength="40"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_work_address"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_living_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/living_conditions"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_living_conditions"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/home_address"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_address"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <com.cheweibao.liuliu.ui.MyEditText
+                        android:id="@+id/et_home_address"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_home_address"
+                        android:maxLength="40"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_home_address"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/contacts"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <com.cheweibao.liuliu.ui.MyEditText
+                        android:id="@+id/et_contacts"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_contacts"
+                        android:maxLength="20"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_contacts"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/ic_contacts" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/contact_phone"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_contact_phone"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/et_contact_phone"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/clear_contact_phone"
+                        android:layout_width="14dip"
+                        android:layout_height="14dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textview_style_black18_20_30"
+                        android:text="@string/relation"
+                        android:textColor="@color/tv_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_relation"
+                        style="@style/textview_style_black16"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/tab_nomal"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/app_right_small" />
+                </LinearLayout>
+
+                <View style="@style/a_layout_style_hline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dip">
+
+                <TextView
+                    style="@style/textview_style_black18_20_30"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/upload_data"
+                    android:textColor="@color/tv_gray"
+                    android:textSize="14sp" />
+
+                <com.cheweibao.liuliu.ui.BaseGridView
+                    android:id="@+id/gv_upload_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="0.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+</LinearLayout>

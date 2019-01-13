@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:round="http://schemas.android.com/tools"
+    android:background="@color/activity_background">
+
+    <!--<com.cheweibao.doctorcar.ui.ScrollViewExt-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <LinearLayout style="@style/layout_style_mmv">
+            <LinearLayout style="@style/layout_style_mwv" android:background="@color/colorPrimary"
+                android:paddingBottom="0dp">
+                <TextView style="@style/textview_style_white16" android:layout_marginTop="20dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="我的"  android:gravity="center"/>
+
+                <RelativeLayout style="@style/layout_style_mw" android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp">
+                    <com.cheweibao.liuliu.ui.RoundedImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/iv_user"     android:layout_width="70dp"
+                        android:layout_height="70dp"       android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"   android:src="@drawable/icon_user_def"
+                        android:scaleType="centerCrop" app:border_color="#ffe5e5e5"
+                        app:border_width="1dp"      app:is_oval="true" />
+                    <ImageView android:id="@+id/iv_mark" android:src="@drawable/wd_icon_yrz"
+                        android:layout_width="20dp"  android:layout_height="20dp"
+                        android:layout_alignRight="@id/iv_user" android:layout_alignBottom="@id/iv_user"
+                        android:layout_marginBottom="3dp"/>
+                </RelativeLayout>
+                <TextView android:id="@+id/tv_name"
+                    style="@style/textview_style_white16" android:layout_marginTop="0dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="您好，微贷网用户郎路"  android:gravity="center"/>
+
+                <LinearLayout style="@style/layout_style_mwh" android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout style="@style/layout_style_mw" android:orientation="horizontal"
+                        android:layout_width="0dp" android:layout_weight="1" android:padding="8dp">
+                        <View style="@style/a_layout_style_hblank"/>
+                        <ImageView android:layout_gravity="center_vertical"
+                            android:layout_width="20dp"   android:layout_height="20dp" android:src="@drawable/wd_icon_rz"/>
+                        <TextView  style="@style/textview_style_white14" android:text="认证检测师" android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"/>
+                        <View style="@style/a_layout_style_hblank"/>
+                    </LinearLayout>
+                    <View style="@style/a_layout_style_vline" android:background="@color/colorPrimary"/>
+                    <LinearLayout style="@style/layout_style_mw" android:orientation="horizontal"
+                        android:layout_width="0dp" android:layout_weight="1" android:padding="5dp">
+                        <View style="@style/a_layout_style_hblank"/>
+                        <ImageView android:layout_gravity="center_vertical"
+                            android:layout_width="20dp"   android:layout_height="20dp" android:src="@drawable/wd_icon_ypg"/>
+                        <TextView android:id="@+id/tv_total"
+                            style="@style/textview_style_white14" android:text="已检测200辆" android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"/>
+                        <View style="@style/a_layout_style_hblank"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout android:id="@+id/ll_change_pwd" android:layout_marginTop="10dp" android:padding="5dp"
+                style="@style/layout_style_mwh" android:layout_height="50dp" android:background="@color/white">
+                <ImageView
+                    android:layout_width="30dp"  android:layout_height="30dp" android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_lock" android:layout_marginLeft="10dp" android:scaleType="centerInside"/>
+                <TextView
+                    style="@style/textview_style_black14" android:layout_marginLeft="10dp" android:text="登录密码"/>
+                <View style="@style/a_layout_style_hblank"/>
+                <ImageView
+                    android:layout_width="30dp"  android:layout_height="30dp" android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_r1_82" android:layout_marginLeft="10dp" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline"/>
+            <LinearLayout android:padding="5dp"
+                style="@style/layout_style_mwh" android:layout_height="50dp" android:background="@color/white">
+                <ImageView
+                    android:layout_width="30dp"  android:layout_height="30dp" android:layout_gravity="center_vertical"
+                    android:src="@drawable/online" android:layout_marginLeft="10dp" android:scaleType="centerCrop"/>
+                <TextView
+                    style="@style/textview_style_black14" android:layout_marginLeft="10dp" android:text="在线状态"/>
+                <View style="@style/a_layout_style_hblank"/>
+                <com.suke.widget.SwitchButton android:layout_gravity="center_vertical"
+                    android:id="@+id/sb_online" app:sb_show_indicator="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline"/>
+            <LinearLayout android:id="@+id/ll_version" android:padding="5dp"
+                style="@style/layout_style_mwh" android:layout_height="50dp" android:background="@color/white">
+                <ImageView
+                    android:layout_width="30dp"  android:layout_height="30dp" android:layout_gravity="center_vertical"
+                    android:src="@drawable/wd_icon_bb" android:layout_marginLeft="10dp" android:scaleType="centerCrop"/>
+                <TextView
+                    style="@style/textview_style_black14" android:layout_marginLeft="10dp" android:text="版本"/>
+                <View style="@style/a_layout_style_hblank"/>
+                <TextView android:id="@+id/tv_version" android:layout_marginRight="10dp"
+                    style="@style/textview_style_gray14" android:layout_marginLeft="10dp" android:text="v0.1"/>
+            </LinearLayout>
+
+            <RelativeLayout style="@style/layout_style_m0w" >
+                <LinearLayout android:id="@+id/ll_tel" android:background="@drawable/bg_textview_white_br"
+                    style="@style/layout_style_wwh" android:layout_centerInParent="true"
+                    android:paddingTop="10dp" android:paddingBottom="10dp">
+                    <ImageView
+                        android:layout_width="30dp"  android:layout_height="30dp" android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_tel"  android:scaleType="centerCrop"/>
+                    <LinearLayout style="@style/layout_style_wwv" android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp">
+                        <TextView
+                            style="@style/textview_style_black14" android:layout_marginLeft="10dp"
+                            android:text="客户：400-3030-300"/>
+                        <TextView android:layout_marginTop="3dp"
+                            style="@style/textview_style_gray13" android:layout_marginLeft="10dp"
+                            android:text="上班时间：09:00-20:00"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/ll_logout" android:padding="5dp" android:layout_marginBottom="10dp"
+                style="@style/layout_style_mwv" android:layout_height="50dp" android:background="@color/white">
+                <TextView android:layout_gravity="center"
+                    style="@style/textview_style_black15" android:layout_centerInParent="true" android:text="退出"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <!--</com.cheweibao.doctorcar.ui.ScrollViewExt>-->
+
+
+</RelativeLayout>

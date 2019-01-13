@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_style_black18_20_30"
+            android:text="@string/tv_name"
+            android:textColor="@color/tv_gray"
+            android:textSize="14sp" />
+
+        <com.cheweibao.liuliu.ui.MyEditText
+            android:id="@+id/et_name"
+            style="@style/textview_style_black12"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/et_name"
+            android:maxLength="20"
+            android:textColor="@color/tab_nomal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/clear_name"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/a_layout_style_hline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_style_black18_20_30"
+            android:text="@string/tv_id_card"
+            android:textColor="@color/tv_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_id_card"
+            style="@style/textview_style_black12"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/et_id_card"
+            android:maxLength="18"
+            android:textColor="@color/tab_nomal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/clear_id_card"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/a_layout_style_hline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_style_black18_20_30"
+            android:text="@string/tv_bank_card"
+            android:textColor="@color/tv_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_bank_card"
+            style="@style/textview_style_black12"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/et_bank_card"
+            android:inputType="phone"
+            android:textColor="@color/tab_nomal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/clear_bank_card"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/a_layout_style_hline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_style_black18_20_30"
+            android:text="@string/tv_mobile_numbers"
+            android:textColor="@color/tv_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_mobile_numbers"
+            style="@style/textview_style_black12"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/et_mobile_numbers"
+            android:inputType="phone"
+            android:textColor="@color/tab_nomal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/clear_mobile_numbers"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        style="@style/textview_style_black18_20_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/et_mobile_numbers"
+        android:inputType="phone"
+        android:textColor="@color/tab_nomal"
+        android:textSize="12sp" />
+
+</LinearLayout>

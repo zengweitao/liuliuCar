@@ -1,0 +1,382 @@
+<resources>
+    <string name="app_name">溜溜好车</string>
+    <string name="company_name">浙江车位宝科技有限公司</string>
+    <string name="error_msg_network">网路连接错误。</string>
+    <string name="error_msg_content">服务器错误。</string>
+    <string name="error_msg_upload">上传失败。</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <!-- 注册 -->
+    <string name="tv_phone">手机号</string>
+    <string name="et_phone">请输入手机号</string>
+    <string name="tv_confirm">验证码</string>
+    <string name="et_confirm">请输入验证码</string>
+    <string name="tv_pwd">密&#160;&#160;&#160;&#160;码</string>
+    <string name="et_pwd">请设置密码</string>
+    <string name="tv_pwd_confirm">请确认</string>
+    <string name="et_pwd_confirm">请再输入密码</string>
+    <string name="user_service_protocol">《用户服务协议》</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+
+    <!-- RefreashTabView -->
+    <string name="my_city">杭州</string>
+    <string name="city">当前城市</string>
+    <string name="serch_car">搜索您想要的车</string>
+    <string name="recommend_car">推荐车型</string>
+    <string name="used_car">二手车</string>
+    <string name="choose_car">自选车型</string>
+    <string name="choose_none">没有搜到，换个关键词试试吧！</string>
+
+    <string name="contact_customer_service">联系客服</string>
+    <string name="cancel">取消</string>
+    <string name="call">呼叫</string>
+
+    <string name="tv_default">默认</string>
+    <string name="tv_all">全部</string>
+    <string name="tv_default_list">默认排序</string>
+    <string name="tv_default_down_payments_h_l">首付由高到低</string>
+    <string name="tv_default_down_payments_l_h">首付由低到高</string>
+    <string name="tv_default_monthly_supply_h_l">月供由高到低</string>
+    <string name="tv_default_monthly_supply_l_h">月供由低到高</string>
+    <string name="tv_default_car_price_h_l">车价由高到低</string>
+    <string name="tv_default_car_price_l_h">车价由低到高</string>
+    <string name="tv_down_payments">首付</string>
+    <string name="tv_down_payments_1w">一万以内</string>
+    <string name="tv_down_payments_1_2w">1-2万</string>
+    <string name="tv_down_payments_2_3w">2-3万</string>
+    <string name="tv_down_payments_3_4w">3-4万</string>
+    <string name="tv_down_payments_4w">4万以上</string>
+    <string name="tv_monthly_supply">月供</string>
+    <string name="tv_monthly_supply_2k">2000以内</string>
+    <string name="tv_monthly_supply_2_3k">2000-3000</string>
+    <string name="tv_monthly_supply_3_4k">3000-4000</string>
+    <string name="tv_monthly_supply_4_5k">4000-5000</string>
+    <string name="tv_monthly_supply_5k">5000以上</string>
+
+    <string name="tv_name">姓 &#160;&#160;&#160;名</string>
+    <string name="tv_id_card">身份证</string>
+    <string name="tv_bank_card">银行卡</string>
+    <string name="tv_mobile_numbers">手机号</string>
+    <string name="et_name">请输入您的姓名</string>
+    <string name="et_id_card">请输入您的身份证号</string>
+    <string name="et_bank_card">请输入您借记卡（储蓄卡）的银行卡号</string>
+    <string name="et_mobile_numbers">请输入您银行卡的预留手机号</string>
+    <string name="marital_status">婚姻状况&#160;&#160;&#160;&#160;</string>
+    <string name="highest_education">最高学历&#160;&#160;&#160;&#160;</string>
+    <string name="unit_name">单位名称&#160;&#160;&#160;&#160;</string>
+    <string name="work_telephone">单位电话&#160;&#160;&#160;&#160;</string>
+    <string name="work_address">单位地址&#160;&#160;&#160;&#160;</string>
+    <string name="living_conditions">居住情况&#160;&#160;&#160;&#160;</string>
+    <string name="home_address">家庭地址&#160;&#160;&#160;&#160;</string>
+    <string name="contacts">联系人&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="contact_phone">联系人电话</string>
+    <string name="relation">关系&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="upload_data">上传资料</string>
+    <string name="empowerment_photo">签授权书照片</string>
+    <string name="letter_of_authorization">征信授权书</string>
+    <string name="handheld_identity_card">手持身份证</string>
+    <string name="head_face_of_ID_card">身份证头像页</string>
+    <string name="national_emblem_of_identity_card">身份证国徽页</string>
+    <string name="driving_licence">驾驶证</string>
+    <string name="residence_permit">居住证</string>
+    <string name="property_ownership_certificate">房产证</string>
+    <string name="bank_statement">银行流水</string>
+    <string name="et_unit_name">请输入您的单位名称</string>
+    <string name="et_work_telephone">请输入您单位的电话</string>
+    <string name="et_home_address">请输入详细地址，如：街道、门牌号、楼号、室号等</string>
+    <string name="et_contacts">请输入联系人姓名</string>
+    <string name="et_contact_phone">请输入联系人电话</string>
+
+    <string name="my_order">我的订单</string>
+    <string name="my_repayment">我的还款</string>
+    <string name="intercalate">设置</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="logout">退出登录</string>
+
+    <string name="car_info">车辆详情</string>
+    <string name="staging_scheme">分期方案</string>
+    <string name="welfare">包购置税、送一年保险</string>
+    <string name="additional_conditions">&#160;需另行支付提车服务费</string>
+    <string name="view_all">查看全部分期方案</string>
+    <string name="car_store">提车门店</string>
+    <string name="vehicle_configuration">车辆配置</string>
+    <string name="view_car_all">查看详细页面内容</string>
+    <string name="car_purchase_steps">购车步骤</string>
+    <string name="car_purchase_notice">购车须知</string>
+    <string name="btn_purchase">主人，快把我开回家</string>
+    <string name="btn_consult">咨询</string>
+
+    <string name="order_sure">订单确认</string>
+    <string name="buy_car_store">购买门店</string>
+    <string name="more_car_store">查看更多门店</string>
+    <string name="tv_purchaser">购买人</string>
+    <string name="tv_payment_method">支付方式</string>
+    <string name="tv_total">共计: </string>
+    <string name="tv_ps_thr_pay">(首付、保证金、服务费)</string>
+    <string name="tv_immediate_pay">立即支付</string>
+    <string name="in_review">审核中</string>
+
+    <string name="tv_early_repayment">提前还款</string>
+    <string name="tv_date_payment">支付日期：</string>
+    <string name="tv_period_returned">本期应还(元)</string>
+    <string name="tv_repayment_periods">还款期数</string>
+    <string name="tv_deadline_repayment">还款截止日期：</string>
+    <string name="tv_current_state">当前状态：</string>
+    <string name="tv_bond">保证金(元)：</string>
+    <string name="tv_immediate_repayment">立即还款</string>
+
+    <string name="first_payment">首付</string>
+    <string name="bond">保证金</string>
+    <string name="monthly_supply">月供(36月)</string>
+
+    <string name="basic_parameters">基本参数</string>
+    <string name="body_configuration">车身配置</string>
+    <string name="engine_configuration">发动机配置</string>
+    <string name="gearbox_configuration">变速箱配置</string>
+    <string name="chassis_configuration">底盘配置</string>
+    <string name="wheel_configuration">车轮配置</string>
+    <string name="safety_equipment">安全装备</string>
+    <string name="operation_configuration">操作配置</string>
+    <string name="external_configuration">外部配置</string>
+    <string name="internal_configuration">内部配置</string>
+    <string name="seat_configuration">座椅配置</string>
+    <string name="multimedia_configuration">多媒体配置</string>
+    <string name="car_lamp_configuration">车灯配置</string>
+    <string name="glass_rearview_mirror">玻璃后视镜</string>
+    <string name="air_conditioning_configuration">空调配置</string>
+
+    <string name="car_purchase_steps_title_1">选车</string>
+    <string name="car_purchase_steps_title_2">审核</string>
+    <string name="car_purchase_steps_title_3">签约</string>
+    <string name="car_purchase_steps_title_4">提车</string>
+    <string name="car_purchase_steps_content_1">选择心仪的车型及金融产品</string>
+    <string name="car_purchase_steps_content_2">提交相关信息材料审核</string>
+    <string name="car_purchase_steps_content_3">签订购车合同及车辆信息确认</string>
+    <string name="car_purchase_steps_content_4">到相关门店提车</string>
+
+    <string name="car_purchase_notice_title_1">车源供应</string>
+    <string name="car_purchase_notice_title_2">购车所需资料</string>
+    <string name="car_purchase_notice_title_3">车辆归属</string>
+    <string name="car_purchase_notice_title_4">购置税</string>
+    <string name="car_purchase_notice_title_5">保险明细</string>
+    <string name="car_purchase_notice_title_6">逾期赔付</string>
+    <string name="car_purchase_notice_title_7">上牌</string>
+    <string name="car_purchase_notice_title_8">还款</string>
+    <string name="car_purchase_notice_title_9">留购价</string>
+    <string name="car_purchase_notice_content_1">由各大汽车厂商直接供应，车源品质有保障</string>
+    <string name="car_purchase_notice_content_2">有效期内的驾驶证，线上进行资格审核</string>
+    <string name="car_purchase_notice_content_3">在前四年期间，车辆及车牌所有权归属遛遛，之后可支付留购价过户</string>
+    <string name="car_purchase_notice_content_4">首年费用已包含购置税，无需再支付额外费用</string>
+    <string name="car_purchase_notice_content_5">送一年保险：包含交强险、第三者责任险30万。车损险、不计免赔险</string>
+    <string name="car_purchase_notice_content_6">承诺您在规定时间内完成提车手续办理并通知您提车，逾期未通知则赔付规则对您赔付</string>
+    <string name="car_purchase_notice_content_7">平台负责办理车辆上牌，您无需到现场和额外支付费用</string>
+    <string name="car_purchase_notice_content_8">提车次月起通过绑的银行卡按时还款</string>
+    <string name="car_purchase_notice_content_9">提车次月起通过绑定的银行卡按时还款</string>
+
+
+    <string name="tv_audit_rejection"><font color='#FF4343'>审核拒绝</font></string>
+    <string name="tv_audit_rejection_content">尊敬的小主，很抱歉，您未能通过审核！\n期待与您能再次合作的机会，么么哒！</string>
+    <string name="tv_audit_rejection_btn">我马上去补全</string>
+    <string name="tv_send_back"><font color='#FF44AF35'>审核退回</font></string>
+    <string name="tv_send_back_content">尊敬的小主，您有以下材料需继续提交</string>
+    <string name="tv_review_pass"><font color='#FF44AF35'>审核通过</font></string>
+    <string name="tv_review_pass_content">恭喜你！成功获得由\n溜溜快车提供的“<font color='#FF44AF35'>溜溜产品使用权</font>”的资格</string>
+    <string name="tv_review_pass_btn">扶朕起来，朕要体验</string>
+    <string name="tv_failure_payment">付款失败</string>
+    <string name="tv_failure_payment_content">哎呀！不知道发生了什么？\n您的付款失败了...</string>
+    <string name="tv_failure_payment_btn">再试试</string>
+    <string name="tv_failure_payment_back">不试了，退出</string>
+    <string name="tv_network_link_failure">网络链接失败，请点击刷新重试！</string>
+    <string name="tv_network_link_failure_1">无网络网络链接失败，请点击刷新重试！</string>
+    <string name="tv_refresh">刷新</string>
+    <string name="tv_payment_success">付款成功</string>
+    <string name="tv_payment_success_content">主人，您的付款已经成功！\n去和爱车亲密接触吧！</string>
+    <string name="tv_got_it">知道了</string>
+    <string name="tv_rechoose_car">重新去选车</string>
+    <string name="tv_in_review">主人，您提交的资料正在审核中！\n请您耐心等待，溜溜已经在火速处理了</string>
+    <string name="tv_no_order">暂无订单</string>
+    <string name="tv_send_back_choose_content">尊敬的小主，您需要重新选择车辆</string>
+    <string name="tv_payment_coupon_title"><small>＊</small>温馨提示<small>＊</small></string>
+    <string name="tv_payment_coupon_1">号为统一扣款日，请您及时充值到提交的银行卡内，以维护您良好的信用记录。\n2.由于银行代扣需要人工确认，结果或有所延迟，还款期数与截止日期的变更亦有所延迟，请您耐心等待！\n如有疑问，您可致电客服</string>
+    <string name="tv_payment_coupon_tel">400-966-0081</string>
+    <string name="tv_payment_coupon_2">进行咨询。祝您用车愉快！</string>
+    <string name="tv_margin_cue">保证金在订单结清后\n退还至绑定银行卡</string>
+    <string name="action_settings">Settings</string>
+    <string name="page_tab1">Tab1</string>
+    <string name="page_tab2">Tab2</string>
+    <string name="page_tab3">Tab3</string>
+    <string name="head_title_desc">该demo包含上滑悬浮头部，同时上下拉可刷新数据，可以左右滑动切换tab</string>
+
+    <!--  -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">释放刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which landlordRequire it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载</string>
+    <string name="pull_to_refresh_from_bottom_release_label">释放刷新</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载</string>
+    <!-- load_dialog -->
+    <string name="title_load_dialog">发现新版本</string>
+    <string name="down_load_dialog">立即更新</string>
+    <string name="pass_load_dialog">不再提示</string>
+
+    <string-array name="color_sp">
+        <item>未查</item>
+        <item>黑色</item>
+        <item>白色</item>
+        <item>银色</item>
+        <item>灰色</item>
+        <item>红色</item>
+        <item>蓝色</item>
+        <item>黄色</item>
+        <item>金色</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="zuoqian"> <!--  左前    -->
+        <item>#20#拍摄左前45度角整车照片（条件受限可拍右前）#5#3#</item>
+        <item>#21#左A柱#1##</item>
+        <item>#22#左后视镜#2##</item>
+        <item>#23#左前大灯#2##</item>
+        <item>#24#左前保险杠#2##</item>
+        <item>#25#左前翼子板#2##</item>
+        <item>#26#左前悬挂结构件#1##</item>
+    </string-array>
+
+    <string-array name="zuohou"> <!--  左后    -->
+        <item>#27#左C柱#1##</item>
+        <item>#28#左后尾灯#2##</item>
+        <item>#29#左后保险杠#2##</item>
+        <item>#30#左后翼子板#2##</item>
+        <item>#31#左后悬挂结构件#1##</item>
+    </string-array>
+
+    <string-array name="youqian"> <!--  右前    -->
+        <item>#32#从右前门拍摄驾驶舱照片#5#9#</item>
+        <item>#33#右A柱#1##</item>
+        <item>#34#右后视镜#2##</item>
+        <item>#35#右前大灯#2##</item>
+        <item>#36#右前保险杠#2##</item>
+        <item>#37#右前翼子板#2##</item>
+        <item>#38#右前悬挂结构件#1##</item>
+    </string-array>
+
+    <string-array name="youhou"> <!--  右后    -->
+        <item>#39#拍摄右后45度角整车照片（条件受限可拍左后）#5#5#</item>
+        <item>#40#从后门拍摄后座照片#5#7#</item>
+        <item>#81#从后座拍摄中控台整体照片#5#8#</item>
+        <item>#41#右C柱#1##</item>
+        <item>#42#右后尾灯#2##</item>
+        <item>#43#右后保险杠#2##</item>
+        <item>#44#右后翼子板#2##</item>
+        <item>#45#右后悬挂结构件#1##</item>
+    </string-array>
+
+    <string-array name="zuoce"> <!--  左侧    -->
+        <item>#46#左前车门内面#2##</item>
+        <item>#47#左前车门外面#2##</item>
+        <item>#48#左B柱#1##</item>
+        <item>#49#左后车门内面#2##</item>
+        <item>#50#左后车门外面#2##</item>
+    </string-array>
+
+    <string-array name="youce"> <!--  右侧    -->
+        <item>#51#拍摄右侧整车照片（条件受限可拍左侧）#5#4#</item>
+        <item>#52#右前车门内面#2##</item>
+        <item>#53#右前车门外面#2##</item>
+        <item>#54#右B柱#1##</item>
+        <item>#55#右后车门内面#2##</item>
+        <item>#56#右后车门外面#2##</item>
+    </string-array>
+
+    <string-array name="zhengqian"> <!--  正前   发动机舱 -->
+        <item>#57#拍摄正前整车照片#5#2#</item>
+        <item>#58#请拍摄发动机舱整体照片#5#10#</item>
+        <item>#59#请拍摄发动机舱左侧局部照片#5#11#</item>
+        <item>#60#请拍摄发动机舱右侧局部照片#5#12#</item>
+        <item>#61#发动机舱盖表面#2##</item>
+        <item>#62#前挡风玻璃#2##</item>
+        <item>#63#左前纵梁#1##</item>
+        <item>#64#前横梁#1##</item>
+        <item>#65#右前纵梁#1##</item>
+        <item>#66#缸盖外是否有机油渗漏#7##</item>
+        <item>#67#前翼子板内缘、水箱框架、横拉梁有无凹凸或修复痕迹#7##</item>
+        <item>#68#散热器格栅有无破损#7##</item>
+        <item>#69#发动机舱盖锁止有无异常#4##</item>
+        <item>#70#发动机舱盖支撑杆有无异常#4##</item>
+    </string-array>
+
+    <string-array name="zhenghou">  <!--  正后   -->
+        <item>#71#拍摄后尾箱整体照片#5#6#</item>
+        <item>#72#备胎有无及磨损#8##</item>
+        <item>#73#随车工具完整，无缺失（含千斤顶、轮胎扳手、三角牌、灭火器）#4##</item>
+        <item>#74#后尾箱结构件#1##</item>
+        <item>#75#后尾箱支撑杆功能有无异常#4##</item>
+        <item>#76#后尾箱锁止#4##</item>
+        <item>#77#后挡风玻璃#2##</item>
+        <item>#78#后尾箱盖外观#2##</item>
+        <item>#79#排气声音及颜色有无异常#4##</item>
+    </string-array>
+
+    <string-array name="chedingA"> <!--  车顶A  驾驶舱  -->
+        <item>#80#拍摄仪表盘照片#5#1#</item>
+        <item>#82#车内是否整洁，无异味#4##</item>
+        <item>#83#车辆启动有无异常（启动时间大于5秒，或不能一次成功）#4##</item>
+        <item>#84#仪表指示灯(故障灯)有无异常#4##</item>
+        <item>#85#方向盘是否空旷（自由行程转角大于15度）#4##</item>
+        <item>#86#仪表台是否无划痕，配件是否无缺失#7##</item>
+        <item>#87#排档把手柄及护罩是否完好、无破损#7##</item>
+        <item>#88#雨刮器工作有无异常#4##</item>
+        <item>#89#车外后视镜调节有无异常#4##</item>
+        <item>#90#车内后视镜外观及功能有无异常#4##</item>
+        <item>#91#座椅调节及加热功能有无异常#4##</item>
+        <item>#92#门窗玻璃升降有无异常#4##</item>
+        <item>#93#音响功能有无异常#4##</item>
+        <item>#94#车辆顶棚是否无破损、裂缝、松动及污迹#7##</item>
+        <item>#95#座椅是否完整、无破损#7##</item>
+        <item>#96#车内是否有泡水痕迹#7##</item>
+        <item>#97#天窗移动、开闭有无异常#4##</item>
+        <item>#98#空调功能有无异常（开关调节、制冷、出风）#4##</item>
+        <item>#99#发动机在冷、热车下怠速是否稳定#4##</item>
+        <item>#100#发动机空挡加速声音是否正常、无异响#4##</item>
+        <item>#101#安全带结构是否完整、功能有无异常#4##</item>
+        <item>#102#泊车辅助系统有无异常#4##</item>
+        <item>#103#各类灯光及调节有无异常#4##</item>
+        <item>#104#车门锁止有无异常#4##</item>
+    </string-array>
+
+    <string-array name="chedingB"> <!--  车顶B  车顶/全局  -->
+        <item>#105#车顶（外部）#2##</item>
+        <item>#106#全车车窗玻璃#2##</item>
+        <item>#107#全车轮胎磨损程度(很新即正常)-以磨损最严重的为准#7##</item>
+        <item>#108#全车轮毂磨损程度（很新即正常）-以磨损最严重的为准#3##</item>
+        <item>#109#加装改装#3##</item>
+        <item>#110#全车备注#3##</item>
+    </string-array>
+
+    <string-array name="dipan"> <!--  底盘  -->
+        <item>#111#发动机油底壳有无渗漏#8##</item>
+        <item>#112#变速箱体有无渗漏#8##</item>
+        <item>#113#减震器有无渗漏#8##</item>
+        <item>#114#减震弹簧有无损坏#8##</item>
+    </string-array>
+
+    <string-array name="lushi"> <!--  路试    -->
+        <item>#115#车辆提速是否异常（与车型排量是否相符）#6##</item>
+        <item>#116#涡轮增压车涡轮工作是否异常#6##</item>
+        <item>#117#变速箱工作是否异常#6##</item>
+        <item>#118#行驶是否跑偏#6##</item>
+        <item>#119#行驶过程中车辆底盘部位是否无异响#6##</item>
+        <item>#120#行驶过程中车辆转向部位是否无异响#6##</item>
+        <item>#121#车辆刹车性能是否有异常（启动前、启动后、刹车性能、刹车跑偏）#6##</item>
+        <item>#122#驻车制动工作是否异常#6##</item>
+        <item>#123#路试其它补充说明#3##</item>
+    </string-array>
+    <string name="xieyi">&#160;&#160;&#160;&#160;新华社海南博鳌4月11日电 国家主席习近平11日在海南省博鳌同出席博鳌亚洲论坛2018年年会的中外企业家代表座谈。
+&#160;&#160;&#160;&#160;习近平强调，我们对中国经济的前景是乐观的。方向决定道路，道路决定命运。中国现在的大方向就是实现“两个一百年”奋斗目标。我们走的道路是中国特色社会主义道路，是坚持改革开放的道路。我们对未来充满信心。我们要加满油、把稳舵、鼓足劲，付出异乎寻常的努力，推动新时代中国经济由高速增长转向高质量发展，从量的扩张转向质的提升，从“有没有”转向“好不好”。中国的改革只有进行时，没有完成时。我们要扩大对外开放不停步，我们改革的步伐不会停歇，开放的大门不会关闭。
+&#160;&#160;&#160;&#160;我们要让制度更加成熟定型，让发展更有质量，让治理更有水平，让人民更有获得感、幸福感、安全感。我们要坚定不移发展开放型世界经济，为亚洲和世界发展作出中国贡献，欢迎搭乘中国经济快车，分享中国改革、开放、发展的成果。中国将为国内外企业家投资创业营造更加宽松有序的环境。希望各国企业家在中国改革开放新征程中施展更大作为，得到更大发展。 习近平指出，中国提出“一带一路”倡议，就是要让中国的改革发展造福人类，推动实现共赢共享发展。“一带一路”倡议一切都在阳光下运行。我们不搞小圈子，也不搞强买强卖。
+&#160;&#160;&#160;&#160;我们正在推动制定东亚经济共同体蓝图，共同推进亚太自由贸易区建设。 泰国正大集团董事长兼首席执行官谢国民、中国远洋海运集团有限公司董事长许立荣、美国商会高级副会长薄迈伦、日本丰田汽车公司会长内山田竹志、美国德勤全球主席柯睿尚、台湾地区冠捷科技有限公司董事局主席兼执行总裁宣建生、韩国SK集团董事长崔泰源、英国保诚集团执行总裁韦尔斯、美国黑石集团主席兼首席执行官苏世民等9位企业家代表在座谈中先后发言，他们高度评价中国改革开放取得的伟大成就，赞赏中国为推动世界经济增长作出的突出贡献。他们表示，习近平主席在论坛年会开幕式上宣布的中国扩大开放的一系列新的重大举措令人鼓舞振奋，对世界发出了有利于推进全球化进程的积极信息。中国的改革开放力度前所未有，中国的发展为外资提供着持续不断的良好的发展前景。他们愿把握机遇，积极参与中国的改革开放进程，共建“一带一路”，实现企业更大发展，共同推动亚洲和世界经济走向繁荣。</string>
+</resources>

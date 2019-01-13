@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:id = "@+id/rloDlgBack">
+
+    <LinearLayout android:layout_width="210dp" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_centerInParent="true"
+        android:background="@drawable/dlg_background">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_vertical"
+            android:paddingLeft="7dp" android:paddingRight="7dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:minHeight="72dp">
+
+            <TextView android:id="@+id/tvContent" style="@style/text_style_dlg_content" android:text="联通号登录联通号" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/a_layout_style_hline" />
+
+        <LinearLayout style="@style/layout_style_mwh" >
+            <LinearLayout android:id="@+id/btn_confirm_ok" style="@style/layout_style_weight_w1" android:background="@drawable/btn_dlg_confirm" >
+                <TextView android:id="@+id/tvConfirm_ok" style="@style/text_style_dlg_btn" android:text="确 定" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/a_layout_style_hline" />
+
+            <LinearLayout android:id="@+id/btn_confirm_no" style="@style/layout_style_weight_w1" android:background="@drawable/btn_dlg_confirm" >
+                <TextView android:id="@+id/tvConfirm_cancel" style="@style/text_style_dlg_btn" android:text="取 消" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

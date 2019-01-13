@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_style_wwv">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title_left"
+                style="@style/textview_style_red20"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/tv_title"
+                android:text="*"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/textview_style_gray14"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/layout_style_ww"
+            android:layout_marginTop="3dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_tj" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/layout_style_mwh"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_detail"
+                style="@style/textview_style_gray14"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="查看例图"
+                android:textColor="@color/colorPrimary" />
+
+            <View style="@style/a_layout_style_hblank" />
+
+            <TextView
+                android:id="@+id/tv_del"
+                style="@style/textview_style_black14"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="删除" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+ 

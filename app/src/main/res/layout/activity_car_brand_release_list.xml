@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+
+    <include layout="@layout/layout_top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.cheweibao.liuliu.ui.QuickIndexBar
+            android:id="@+id/quickbar"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#55000000" />
+
+        <TextView
+            android:id="@+id/showLabel"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shap"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

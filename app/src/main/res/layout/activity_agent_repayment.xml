@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/title_layout">
+
+        <LinearLayout
+            style="@style/layout_style_mmv"
+            android:background="@color/activity_background">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_white_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="2dip">
+
+                    <ImageView
+                        android:id="@+id/img_car"
+                        android:layout_width="170dp"
+                        android:layout_height="110dp"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/ic_default" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_car_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:maxLines="2"
+                            android:textColor="@color/tv_black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_car_min_down_payments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/tv_green"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_car_monthly_supply"
+                            style="@style/textview_style_gray12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:gravity="right|bottom"
+                            android:padding="5dip"
+                            android:text="@string/tv_date_payment"
+                            android:textColor="@color/color_grey_999999" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/layout_style_mw"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip">
+
+                <RelativeLayout
+                    android:id="@+id/layout_staging_scheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip">
+
+                    <RelativeLayout
+                        style="@style/layout_style_mw"
+                        android:background="@color/activity_background">
+
+                        <LinearLayout
+                            android:id="@+id/ll_recommend"
+                            style="@style/layout_style_mwh"
+                            android:layout_height="75dip"
+                            android:layout_centerVertical="true">
+
+                            <RelativeLayout
+                                style="@style/layout_style_mm"
+                                android:layout_weight="1">
+
+                                <View
+                                    android:id="@+id/view_mid"
+                                    android:layout_width="0.1dip"
+                                    android:layout_height="0.1dip"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="5dip" />
+
+                                <TextView
+                                    style="@style/textview_style_gray12"
+                                    android:layout_below="@+id/view_mid"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:text="@string/tv_period_returned" />
+
+                                <TextView
+                                    android:id="@+id/tv_first_payment"
+                                    style="@style/textview_style_green20"
+                                    android:layout_above="@+id/view_mid"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                style="@style/layout_style_mm"
+                                android:layout_weight="1">
+
+                                <View
+                                    android:id="@+id/view_mid_2"
+                                    android:layout_width="0.1dip"
+                                    android:layout_height="0.1dip"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginBottom="5dip" />
+
+                                <TextView
+                                    style="@style/textview_style_gray12"
+                                    android:layout_below="@+id/view_mid_2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:text="@string/tv_repayment_periods" />
+
+                                <LinearLayout
+                                    style="@style/layout_style_wwh"
+                                    android:layout_above="@+id/view_mid_2"
+                                    android:layout_centerHorizontal="true">
+
+                                    <TextView
+                                        android:id="@+id/tv_monthly_supply"
+                                        style="@style/textview_style_green20"
+                                        android:textSize="24sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_monthly_supply_unit"
+                                        style="@style/textview_style_green14"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginLeft="1dip"
+                                        android:paddingBottom="2dip"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_additional_conditions"
+                    style="@style/textview_style_gray12"
+                    android:layout_below="@+id/layout_staging_scheme"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="@string/tv_deadline_repayment" />
+
+                <TextView
+                    style="@style/textview_style_gray12"
+                    android:layout_below="@+id/layout_staging_scheme"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toLeftOf="@+id/tv_state"
+                    android:gravity="center"
+                    android:text="@string/tv_current_state" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/textview_style_green12"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/layout_staging_scheme"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="还款中" />
+
+            </RelativeLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <LinearLayout
+                style="@style/layout_style_mwh"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/white"
+                android:gravity="center_vertical"
+                android:padding="10dip">
+
+                <TextView
+                    style="@style/textview_style_gray12"
+                    android:text="@string/tv_bond" />
+
+                <TextView
+                    android:id="@+id/tv_bond"
+                    style="@style/textview_style_gray12" />
+
+                <ImageView
+                    android:id="@+id/icon_question"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="10dip"
+                    android:padding="5dip"
+                    android:src="@drawable/icon_question" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mmv"
+                android:background="@color/white"
+                android:padding="10dip">
+
+                <TextView
+                    style="@style/textview_style_green12"
+                    android:gravity="center"
+                    android:text="@string/tv_payment_coupon_title"
+                    android:textColor="@color/tv_must" />
+
+                <TextView
+                    android:id="@+id/tv_payment_coupon"
+                    style="@style/textview_style_gray12"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="14sp"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_choose_pay"
+                style="@style/layout_style_mwv"
+                android:layout_marginBottom="20dip"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dip"
+                    android:text="@string/tv_payment_method" />
+
+                <View style="@style/a_layout_style_hline" />
+
+                <LinearLayout
+                    style="@style/layout_style_mwh"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_alipay"
+                        style="@style/layout_style_mwh"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white_gray"
+                        android:gravity="center_vertical"
+                        android:padding="10dip">
+
+                        <ImageView
+                            android:id="@+id/select_alipay"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_select" />
+
+                        <ImageView
+                            android:layout_width="100dip"
+                            android:layout_height="30dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_alipay" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_weixin"
+                        style="@style/layout_style_mwh"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white_gray"
+                        android:gravity="center_vertical"
+                        android:padding="10dip">
+
+                        <ImageView
+                            android:id="@+id/select_weixin"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_unselect" />
+
+                        <ImageView
+                            android:layout_width="100dip"
+                            android:layout_height="30dip"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_weixin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <View
+        style="@style/a_layout_style_hline"
+        android:layout_above="@+id/ll_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/layout_style_mwh"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_in_review"
+            style="@style/textview_style_white18"
+            android:layout_width="256dp"
+            android:layout_height="50dip"
+            android:background="@drawable/btn_blue_3_br"
+            android:gravity="center"
+            android:minHeight="40dip"
+            android:text="@string/tv_immediate_repayment" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/refresh"
+        layout="@layout/activity_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:visibility="gone" />
+</RelativeLayout>

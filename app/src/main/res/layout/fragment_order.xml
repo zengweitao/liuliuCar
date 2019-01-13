@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <LinearLayout style="@style/layout_style_mmv">
+
+        <EditText
+            android:id="@+id/tv_search"
+            style="@style/textview_style_gray14"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_textview_white_br"
+            android:drawableLeft="@drawable/icon_ss"
+            android:hint="订单编号、姓名"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_waiting"
+            style="@style/layout_style_mm"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white_gray"
+            android:paddingBottom="5dp">
+
+            <LinearLayout style="@style/layout_style_mmv">
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:clipToPadding="false"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingTop="0dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    ptr:ptrAnimationStyle="rotate"
+                    ptr:ptrHeaderTextColor="#333333"
+                    ptr:ptrMode="both" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                style="@style/layout_style_wwv"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dd_icon_wdd" />
+
+                <TextView
+                    style="@style/textview_style_black18"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="暂无订单" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

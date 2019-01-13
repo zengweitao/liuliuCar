@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style_mmv"
+    android:id="@+id/ll_main"
+    android:background="@color/white">
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout style="@style/layout_style_mwv" android:background="@color/white" android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="卖家报价（元）"
+                        android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_price" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp" android:singleLine="true" android:maxLines="1"
+                        android:inputType="numberDecimal" android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="20dp" android:layout_marginTop="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv" android:layout_marginTop="10dp">
+                <TextView style="@style/textview_style_black14" android:text="售后质保期限"
+                    android:layout_marginRight="5dp"/>
+                <LinearLayout style="@style/layout_style_mwv" android:padding="5dp">
+                    <RadioGroup
+                        android:id="@+id/zhiBaoQi_rg"    android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"   android:layout_gravity="center_vertical|right"
+                        android:gravity="center_horizontal"      android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/zhibaoqi_wu_rd"        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"   android:text="无" />
+
+                        <RadioButton       android:id="@+id/zhibaoqi_1_rd"
+                            android:layout_width="wrap_content"     android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"       android:text="1周或500公里" />
+
+                        <RadioButton    android:id="@+id/zhibaoqi_2_rd"
+                            android:layout_width="wrap_content"    android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"    android:text="1月或1500公里" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/layout_style_mwv" android:layout_marginTop="5dp"
+                android:id="@+id/ll_after_srv" android:visibility="invisible">
+                <TextView style="@style/textview_style_black14" android:text="售后质保方式"
+                    android:layout_marginRight="5dp"/>
+                <LinearLayout style="@style/layout_style_mwv" android:padding="5dp">
+                    <RadioGroup android:id="@+id/zhiBaoFangShi_rg"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"   android:gravity="center_horizontal"
+                        android:orientation="horizontal"     android:paddingLeft="15dip" android:layout_marginRight="10dp">
+
+                        <RadioButton     android:id="@+id/zhibaofangshi_baohuan_rd"
+                            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                            android:text="包换" />
+
+                        <RadioButton        android:id="@+id/zhibaofangshi_youtiaojian_rd"
+                            android:layout_width="wrap_content"     android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"    android:text="有条件包退" />
+
+                        <RadioButton  android:id="@+id/zhibaofangshi_wutiaojian_rd"
+                            android:layout_width="wrap_content"    android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip" android:text="无条件包退" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="20dp" android:layout_marginTop="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv" android:layout_marginTop="10dp">
+                <LinearLayout style="@style/layout_style_mwv" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="追加描述信息"
+                        android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_remark" style="@style/textview_style_black15"
+                        android:background="@drawable/white" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp" android:hint="请输入..."
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <LinearLayout style="@style/layout_style_mwv" android:paddingTop="5dp" >
+        <LinearLayout style="@style/layout_style_mwh" >
+            <Button android:id="@+id/btn_save"
+                style="@style/textview_style_white15"
+                android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:text="保存"
+                android:background="@drawable/btn_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

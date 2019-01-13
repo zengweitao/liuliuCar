@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <!--<com.cheweibao.doctorcar.ui.ScrollViewExt-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <LinearLayout style="@style/layout_style_mmv">
+
+        <LinearLayout
+            style="@style/layout_style_mwv"
+            android:layout_height="220dip"
+            android:background="@drawable/bg_mywode"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                style="@style/layout_style_mw"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="100dp">
+
+                <com.cheweibao.liuliu.ui.RoundedImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_user_def"
+                    app:border_color="#ffe5e5e5"
+                    app:border_width="1dp"
+                    app:is_oval="true" />
+
+                <ImageView
+                    android:id="@+id/iv_mark"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/iv_user"
+                    android:layout_alignRight="@id/iv_user"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/wd_icon_yrz"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/textview_style_white16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="点我登录"
+                android:textColor="@color/tv_black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_order"
+            style="@style/layout_style_mwh"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_my_order" />
+
+            <TextView
+                style="@style/textview_style_black14"
+                android:layout_marginLeft="10dp"
+                android:text="@string/my_order" />
+
+            <View style="@style/a_layout_style_hblank" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_r1_82" />
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <LinearLayout
+            android:id="@+id/ll_my_repayment"
+            style="@style/layout_style_mwh"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_my_repayment" />
+
+            <TextView
+                style="@style/textview_style_black14"
+                android:layout_marginLeft="10dp"
+                android:text="@string/my_repayment" />
+
+            <View style="@style/a_layout_style_hblank" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_r1_82" />
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <LinearLayout
+            android:id="@+id/ll_tel"
+            style="@style/layout_style_mwh"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_contact_customer_service" />
+
+            <TextView
+                style="@style/textview_style_black14"
+                android:layout_marginLeft="10dp"
+                android:text="@string/contact_customer_service" />
+
+            <View style="@style/a_layout_style_hblank" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_r1_82" />
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <LinearLayout
+            android:id="@+id/ll_intercalate"
+            style="@style/layout_style_mwh"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_intercalate" />
+
+            <TextView
+                style="@style/textview_style_black14"
+                android:layout_marginLeft="10dp"
+                android:text="@string/intercalate" />
+
+            <View style="@style/a_layout_style_hblank" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_r1_82" />
+        </LinearLayout>
+
+        <RelativeLayout style="@style/layout_style_m0w">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--</com.cheweibao.doctorcar.ui.ScrollViewExt>-->
+
+    <View
+        android:id="@+id/change_url"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <include
+        android:id="@+id/ll_change_url"
+        layout="@layout/dialog_change_url"
+        android:visibility="gone" />
+</RelativeLayout>

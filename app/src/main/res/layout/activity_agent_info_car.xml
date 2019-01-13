@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/title_layout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            style="@style/layout_style_mmv"
+            android:background="@color/activity_background">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:background="@drawable/ic_default" />
+
+            <LinearLayout
+                style="@style/layout_style_mwv"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip">
+
+                <TextView
+                    android:id="@+id/tv_car_name"
+                    style="@style/textview_style_black18"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_car_guiding_price"
+                    style="@style/textview_style_gray12"
+                    android:layout_marginTop="10dip"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/layout_style_mw"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip">
+
+                <TextView
+                    android:id="@+id/staging_scheme"
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/staging_scheme"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_event"
+                    style="@style/textview_style_green12"
+                    android:layout_alignBottom="@+id/staging_scheme"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toEndOf="@+id/staging_scheme"
+                    android:layout_toRightOf="@+id/staging_scheme"
+                    android:text="@string/welfare"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_staging_scheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/staging_scheme"
+                    android:layout_marginTop="10dip">
+
+                    <include
+                        layout="@layout/item_gv_staging_scheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/is_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_recommend" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_additional_conditions"
+                    style="@style/textview_style_gray12"
+                    android:layout_below="@+id/layout_staging_scheme"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/icon_prompt"
+                    android:gravity="center"
+                    android:text="@string/additional_conditions"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_service_charge"
+                    style="@style/textview_style_green12"
+                    android:layout_alignBaseline="@+id/tv_additional_conditions"
+                    android:layout_toRightOf="@+id/tv_additional_conditions"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <TextView
+                android:id="@+id/tv_view_all"
+                style="@style/textview_style_gray14"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/selector_white_gray"
+                android:gravity="center"
+                android:text="@string/view_all"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_store"
+                style="@style/layout_style_mwh"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/selector_white_gray"
+                android:gravity="center_vertical"
+                android:padding="10dip">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/car_store"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_car_store"
+                    style="@style/textview_style_gray13"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_car_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_carinfo"
+                style="@style/layout_style_mwv"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/vehicle_configuration"
+                    android:textSize="16sp" />
+
+                <View style="@style/a_layout_style_hline" />
+
+                <com.cheweibao.liuliu.ui.BaseListView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/activity_background"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="1dp" />
+                <View style="@style/a_layout_style_hline" />
+
+                <TextView
+                    android:id="@+id/tv_view_car_all"
+                    style="@style/textview_style_gray14"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/selector_white_gray"
+                    android:gravity="center"
+                    android:text="@string/view_car_all"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mwv"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/car_purchase_steps"
+                    android:textSize="16sp" />
+
+                <View style="@style/a_layout_style_hline" />
+
+                <com.cheweibao.liuliu.ui.BaseListView
+                    android:id="@+id/gv_car_purchase_steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_style_mwv"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <TextView
+                    style="@style/textview_style_black16"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/car_purchase_notice"
+                    android:textSize="16sp" />
+
+                <View style="@style/a_layout_style_hline" />
+
+                <com.cheweibao.liuliu.ui.BaseListView
+                    android:id="@+id/gv_car_purchase_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/layout_style_mwh"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/ll_consult"
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:background="@drawable/selector_white_gray"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_above="@+id/view_mid"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_navbar" />
+
+            <View
+                android:id="@+id/view_mid"
+                android:layout_width="0.1dip"
+                android:layout_height="0.1dip"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                style="@style/textview_style_gray11"
+                android:layout_below="@+id/view_mid"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/btn_consult"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_purchase"
+            style="@style/textview_style_white18"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_3"
+            android:gravity="center"
+            android:text="@string/btn_purchase"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/programme_layout"
+        layout="@layout/layout_programme"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/refresh"
+        layout="@layout/activity_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:visibility="gone" />
+</RelativeLayout>

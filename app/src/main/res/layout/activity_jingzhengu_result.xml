@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style_mmv"
+    android:id="@+id/ll_main"
+    android:background="@color/white_gray">
+
+
+    <LinearLayout style="@style/layout_style_mmv">
+        <include android:id="@+id/title_layout" layout="@layout/layout_top_blue" />
+
+        <com.cheweibao.liuliu.ui.ScrollViewExt
+            android:id="@+id/svMain" android:layout_below="@+id/title_layout"
+            android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:layout_marginTop="10dp">
+                    <WebView
+                        android:id="@+id/web_view"
+                        android:minHeight="400dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/white_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout style="@style/layout_style_mwh" android:layout_marginTop="10dp">
+                    <Button android:id="@+id/btn_next"
+                        style="@style/textview_style_white15"
+                        android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                        android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                        android:text="下一步"
+                        android:background="@drawable/btn_blue_3_br"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.cheweibao.liuliu.ui.ScrollViewExt>
+    </LinearLayout>
+</RelativeLayout>

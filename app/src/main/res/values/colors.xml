@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FCFCFC</color>
+    <color name="colorPrimaryLight">#4acec5</color>
+    <color name="colorPrimaryDark">#0c97a9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_gray">#ffbad2fe</color>
+    <color name="colorSecondary">#0c97a9</color>
+    <color name="activity_background">#fff4f4f4</color>
+    <color name="activity_background_green">#27ae61</color>
+
+    <color name="gray_blue">#b7ebe8</color>
+    <color name="colorPrimaryLight2">#bafef5</color>
+    <color name="car_deale_color">#FF0DBDB2</color>
+    <color name="car_deale_color_gray">#FFDCDCDC</color>
+
+
+    <color name="red">#ffff0000</color>
+
+    <color name="colorLine">#dcdcdc</color>
+    <color name="header_background">#ffffffff</color>
+    <color name="header_background_pink">#27ae61</color>
+    <color name="header_font">#ff333333</color>
+    <color name="header_font_white">#ffffffff</color>
+    <color name="header_bottom_line">#ffededed</color>
+    <color name="header_font_sel">#ffd9d9d9</color>
+
+    <color name="black">#ff000000</color>
+    <color name="tv_black">#FF444444</color>
+    <color name="tv_gray">#FF666666</color>
+    <color name="tv_green">#FF44AF35</color>
+    <color name="tv_pass">#009FE8</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_25">#BFffffff</color>
+    <color name="white_gray">#ffe5e5e5</color>
+    <color name="table_primary">#ecebf1</color>
+    <color name="table_secondary">#f6f5fb</color>
+    <color name="black_a30">#4c000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#80FFFFFF</color>
+    <color name="transparent_30">#4D000000</color>
+    <color name="tab_nomal">#ff999999</color>
+    <color name="tab_select">#4b8cf0</color>
+    <color name="tab_background">#ffffffff</color>
+    <color name="tab_top_line">#ffdddddd</color>
+
+
+    <color name="hongbao_blue">#ff00aaff</color>
+    <color name="hongbao_blue_2">#ff0394dd</color>
+    <color name="hongbao_green">#ff0bca16</color>
+    <color name="hongbao_green_2">#ff09a812</color>
+    <color name="light_orange">#FFBB33</color>
+    <color name="deep_orange">#FF8800</color>
+    <color name="tv_must">#F2971B</color>
+
+
+    <color name="color_gray_eaeaea">#eaeaea</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_black_d9d9d9">#d9d9d9</color>
+    <color name="color_purple_bd6aff">#bd6aff</color>
+    <color name="GreyWhite_has_alpha">#66FAFAFA</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+
+    <color name="gray">#FF555555</color> <!-- dark level 1 -->
+    <color name="gray1">#FFe3e3e3</color> <!-- dark level 3 && seperator color-->
+    <color name="gray2">#FFf0f0f0</color> <!-- dark level 5 -->
+    <color name="gray3">#FFadadad</color> <!-- dark level 2 -->
+    <color name="gray4">#fff7f7f7</color> <!-- dark level 2 -->
+
+    <color name="color_item">#FFEEEEEE</color>
+    <color name="pinggu_text_color">#FFAEAEAE</color> <!-- dark level 2 -->
+
+    <drawable name="green">#BDF2C9</drawable>
+    <drawable name="blue">#49A2E2</drawable>
+    <drawable name="gray">#F7F7F7</drawable>
+    <drawable name="orange">#FF8000</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+
+
+</resources>

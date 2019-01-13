@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <!-- 添加多帧 -->
+    <item
+        android:drawable="@drawable/pic01"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic02"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic03"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic04"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic05"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic06"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic07"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic08"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic09"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/pic010"
+        android:duration="100" />
+</animation-list>

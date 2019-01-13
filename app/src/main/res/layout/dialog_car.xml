@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:id="@+id/lin_person_type_biaoti"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/img_person_type_biaoti"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginRight="15dp"
+                android:textColor="#FFFFFFFF"
+                android:id="@+id/tv_person_type_biaoti"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            android:id="@+id/person_view"
+            android:layout_below="@+id/lin_person_type_biaoti"
+            android:background="#FFFFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <ListView
+            android:layout_below="@+id/person_view"
+            android:listSelector="@android:color/transparent"
+            android:background="@color/colorPrimary"
+            android:divider="@drawable/list_item_divider"
+            android:dividerHeight="0.5dp"
+            android:id="@+id/car_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_car_empty"
+            android:layout_centerInParent="true"
+            style="@style/layout_style_wwv"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dd_icon_wdd" />
+
+            <TextView
+                style="@style/textview_style_black18"
+                android:text="暂无数据"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

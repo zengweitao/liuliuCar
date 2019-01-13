@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_list"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_list" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_down_payments_h_l"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_down_payments_h_l" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_down_payments_l_h"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_down_payments_l_h" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_monthly_supply_h_l"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_monthly_supply_h_l" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_monthly_supply_l_h"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_monthly_supply_l_h" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_car_price_h_l"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_car_price_h_l" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <TextView
+        android:id="@+id/tv_default_car_price_l_h"
+        style="@style/textview_style_gray12"
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="8dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="8dip"
+        android:text="@string/tv_default_car_price_l_h" />
+
+    <View style="@style/a_layout_style_hline" />
+
+    <View
+        android:id="@+id/view_default_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_30" />
+
+
+</LinearLayout>

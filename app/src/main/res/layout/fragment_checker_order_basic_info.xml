@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_style_mmv"
+    android:id="@+id/ll_main"
+    android:background="@color/white">
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:id="@+id/svMain" android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <LinearLayout style="@style/layout_style_mwv" android:background="@color/white">
+            <LinearLayout style="@style/layout_style_mwh">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="注册地省市"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <TextView android:id="@+id/tv_province" style="@style/textview_style_black15"
+                        android:text="" android:background="@drawable/bg_textview_border_gray_br"
+                        android:layout_weight="1" android:padding="5dp" android:visibility="gone"/>
+                    <TextView android:id="@+id/tv_city" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:layout_marginLeft="0dp" android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="详细地址"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_detail_addr" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="车辆型号"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <TextView android:id="@+id/tv_car_type" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="3dp"/>
+                </LinearLayout>
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp" android:layout_marginLeft="60dp">
+                    <TextView style="@style/textview_style_black14" android:text="品牌"/>
+                    <TextView android:id="@+id/tv_brand" style="@style/textview_style_black15"
+                        android:layout_weight="1.5" android:background="@drawable/bg_textview_border_gray_br"
+                        android:layout_marginLeft="10dp" android:padding="5dp" android:layout_width="0dp"/>
+                    <TextView style="@style/textview_style_black14" android:text="款式"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView android:id="@+id/tv_car_year" style="@style/textview_style_black15" android:layout_width="0dp"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:layout_marginLeft="10dp" android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="车牌号码"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_car_number" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp" android:singleLine="true" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="表显历程(Km)"
+                        android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_car_dist" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp" android:singleLine="true" android:maxLines="1"
+                        android:layout_width="0dp" android:inputType="numberDecimal"/>
+                    <TextView style="@style/textview_style_black14" android:text="登记日期"
+                        android:layout_marginLeft="10dp" android:layout_marginRight="5dp"/>
+                    <TextView android:id="@+id/tv_reg_date" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp" android:layout_width="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <View style="@style/a_layout_style_hblank"/>
+                    <TextView style="@style/textview_style_black14" android:text="商业险"
+                        android:layout_marginRight="5dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_com_ins" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="center_vertical|left" />
+                    <TextView style="@style/textview_style_black14" android:text="交强险"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_traff_ins" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="颜色"/>
+                    <Spinner android:spinnerMode="dialog"
+                        android:id="@+id/sp_car_color" android:layout_marginLeft="10dp"
+                        android:layout_width="0dp" android:layout_height="28dp" android:layout_weight="1"
+                        android:layout_gravity="center_vertical" android:background="@drawable/bg_textview_border_gray_br"
+                        android:inputType="textPersonName"    android:textSize="15dp" />
+                    <TextView style="@style/textview_style_black14" android:text="排量"
+                        android:layout_marginLeft="20dp"/>
+                    <EditText android:id="@+id/et_car_pl" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:layout_marginLeft="10dp" android:padding="5dp" android:inputType="numberDecimal"
+                        android:singleLine="true" android:maxLines="1" android:layout_width="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <View style="@style/a_layout_style_hblank"/>
+                    <TextView style="@style/textview_style_black14" android:text="涡轮增压"
+                        android:layout_marginRight="5dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_ctrl_press" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="center_vertical|left" />
+                    <TextView style="@style/textview_style_black14" android:text="是否已一手车"
+                        android:layout_marginRight="5dp" android:layout_marginLeft="20dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_is_new" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"   android:layout_gravity="center_vertical|left" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="最近过户时间"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <TextView android:id="@+id/tv_rcv_date" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/a_layout_style_hline" android:layout_marginLeft="10dp"/>
+            <LinearLayout style="@style/layout_style_mwv">
+                <LinearLayout style="@style/layout_style_mwh" android:padding="5dp">
+                    <TextView style="@style/textview_style_black14" android:text="手机号"
+                        android:layout_width="90dp" android:layout_marginRight="5dp"/>
+                    <EditText android:id="@+id/et_phone" style="@style/textview_style_black15"
+                        android:layout_weight="1" android:background="@drawable/bg_textview_border_gray_br"
+                        android:padding="5dp" android:singleLine="true" android:maxLines="1"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_wblank" android:layout_height="30dp"/>
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+    <LinearLayout style="@style/layout_style_mwv" android:paddingTop="5dp" >
+        <LinearLayout style="@style/layout_style_mwh" >
+            <Button android:id="@+id/btn_save"
+                style="@style/textview_style_white15"
+                android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"
+                android:layout_marginBottom="0dp"
+                android:text="保存"
+                android:background="@drawable/btn_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

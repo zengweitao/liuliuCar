@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_choose_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_white_gray"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="8dip"
+    android:paddingTop="5dip">
+
+    <ImageView
+        android:id="@+id/img_car"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/ic_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:textColor="@color/tv_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_car_min_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:maxLines="3"
+            android:textColor="@color/tv_gray"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_down_payments"
+                android:textColor="@color/tv_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_car_min_down_payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_green"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_car_min_down_payments_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万"
+                android:textColor="@color/tv_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_car_monthly_supply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/color_grey_999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

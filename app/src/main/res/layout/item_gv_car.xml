@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_style_mmv"
+    android:background="@drawable/selector_white_gray"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_default" />
+
+    <TextView
+        android:id="@+id/tv_name_item"
+        style="@style/textview_style_black14"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dip"
+        android:ellipsize="end"
+        android:lines="2" />
+
+    <RelativeLayout
+        style="@style/layout_style_mw"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:id="@+id/left"
+            style="@style/textview_style_green14"
+            android:layout_alignParentBottom="true"
+            android:text="首付" />
+
+        <TextView
+            android:id="@+id/tv_first_item"
+            style="@style/textview_style_green16"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/left" />
+
+        <TextView
+            android:id="@+id/tv_first_item_unit"
+            style="@style/textview_style_green14"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_first_item"
+            android:text="万" />
+
+        <TextView
+            android:id="@+id/tv_month_item"
+            style="@style/textview_style_gray12"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="月供千" />
+    </RelativeLayout>
+</LinearLayout>

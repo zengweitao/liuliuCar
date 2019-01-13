@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownView">
+        <attr name="countTextDownColor" format="color"/>
+        <attr name="countTextDownSize" format="dimension"/>
+    </declare-styleable>
+</resources>

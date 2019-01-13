@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_style_mm"
+    android:background="@color/white_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/llGallery"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/white_gray">
+
+        <com.cheweibao.liuliu.ui.LoopViewPager
+            android:id="@+id/vpGallery"
+            style="@style/layout_style_mm" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <LinearLayout style="@style/layout_style_mmv"  android:orientation="vertical"
+        android:background="@drawable/eg_car" android:weightSum="1200">
+        <LinearLayout style="@style/layout_style_mwh" android:layout_height="0dp"
+            android:layout_weight="390">
+            <RelativeLayout android:id="@+id/rl_zuoqian" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_zhengqian" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+            <RelativeLayout  android:id="@+id/rl_youqian" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/layout_style_mmh" android:layout_height="0dp"
+            android:layout_weight="300">
+            <RelativeLayout android:id="@+id/rl_zuoce" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+            <LinearLayout
+                style="@style/layout_style_wmv" android:layout_width="0dp" android:layout_weight="191">
+                <RelativeLayout android:id="@+id/rl_chedingA" android:background="@drawable/bg_trans_blue"
+                    style="@style/layout_style_mw" android:layout_height="1dp" android:layout_weight="1">
+
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_chedingB" android:background="@drawable/bg_trans_blue"
+                    style="@style/layout_style_mw" android:layout_height="1dp" android:layout_weight="1">
+
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout  android:id="@+id/rl_youce" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout style="@style/layout_style_mmh" android:layout_height="0dp"
+            android:layout_weight="250">
+            <RelativeLayout android:id="@+id/rl_zuohou" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_zhenghou" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+            <RelativeLayout  android:id="@+id/rl_youhou" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="191">
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/layout_style_mmh" android:layout_height="0dp"
+            android:layout_weight="260">
+            <RelativeLayout android:id="@+id/rl_lushi" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="1">
+
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_dipan" android:background="@drawable/bg_trans_blue"
+                style="@style/layout_style_wm" android:layout_width="0dp" android:layout_weight="1">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

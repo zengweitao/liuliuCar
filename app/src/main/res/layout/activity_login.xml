@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_above="@+id/ll_mid"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo_lablel" />
+
+    <LinearLayout
+        android:id="@+id/ll_mid"
+        style="@style/layout_style_mwv"
+        android:layout_width="230dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/login_icon_sj" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                style="@style/textview_style_white16"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColorHint="@color/white_gray" />
+
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/login_icon_mm" />
+
+            <com.cheweibao.liuliu.ui.MyEditText
+                android:id="@+id/etPwd"
+                style="@style/textview_style_white16"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="登录密码"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColorHint="@color/white_gray" />
+
+        </LinearLayout>
+
+        <View style="@style/a_layout_style_hline" />
+
+        <LinearLayout
+            style="@style/layout_style_wwh"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvResetPwd"
+                style="@style/textview_style_gray12"
+                android:autoLink="all"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp"
+                android:text="忘记密码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tvLogin"
+            style="@style/textview_style_white16"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_grey_blue_br"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            style="@style/layout_style_wwh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/textview_style_gray13"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp"
+                android:text="还没有注册？"
+                android:textColor="@color/gray_blue" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/textview_style_gray13"
+                android:autoLink="all"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp"
+                android:text="创建一个"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cheweibao.liuliu.ui.ClickEffectImageView
+        android:id="@+id/btn_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_login_close" />
+</RelativeLayout>

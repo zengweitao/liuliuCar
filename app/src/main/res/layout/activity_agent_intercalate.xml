@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_top_blue" />
+
+    <com.cheweibao.liuliu.ui.ScrollViewExt
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/white">
+
+        <LinearLayout
+            style="@style/layout_style_mmv"
+            android:background="@color/activity_background">
+
+
+            <LinearLayout
+                android:id="@+id/ll_version"
+                style="@style/layout_style_mwv"
+                android:background="@drawable/bg_intercalate"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    style="@style/layout_style_mw"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="80dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logo" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    style="@style/textview_style_gray14"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="v1.0.0"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_clean_cache"
+                style="@style/layout_style_mwh"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="5dp">
+
+
+                <TextView
+                    style="@style/textview_style_black14"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/clear_cache" />
+
+                <View style="@style/a_layout_style_hblank" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_r1_82" />
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <LinearLayout
+                android:id="@+id/ll_change_pwd"
+                style="@style/layout_style_mwh"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/textview_style_black14"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/change_pwd" />
+
+                <View style="@style/a_layout_style_hblank" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_r1_82" />
+            </LinearLayout>
+
+            <View style="@style/a_layout_style_hline" />
+
+            <RelativeLayout
+                android:id="@+id/ll_logout"
+                style="@style/layout_style_mwv"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/textview_style_green15"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="@string/logout" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.cheweibao.liuliu.ui.ScrollViewExt>
+
+</RelativeLayout>

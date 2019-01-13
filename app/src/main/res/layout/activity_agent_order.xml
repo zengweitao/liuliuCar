@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:round="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            style="@style/layout_style_mwv"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                style="@style/layout_style_ww"
+                android:layout_width="190dp"
+                android:layout_centerInParent="true"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    style="@style/layout_style_ww"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_bg_light_blue"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_waiting"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_bg_trans_blue_br"
+                        android:gravity="center"
+                        android:text="评估订单"
+                        android:textColor="@drawable/text_selectable_blue_white" />
+
+                    <TextView
+                        android:id="@+id/tv_finished"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/textview_bg_trans_blue_br"
+                        android:gravity="center"
+                        android:text="历史订单"
+                        android:textColor="@drawable/text_selectable_blue_white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_order_count"
+                    style="@style/textview_style_white13"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/bg_badge_red"
+                    android:gravity="center"
+                    android:minWidth="18dp"
+                    android:text="0"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_programme_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent_30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <TextView
+                style="@style/textview_style_black16"
+                android:layout_centerInParent="true"
+                android:text="@string/staging_scheme" />
+
+            <ImageView
+                android:id="@+id/view_programme_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/view_programme_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="265dip"
+            android:divider="@color/white"
+            android:dividerHeight="10dp"
+            android:padding="10dip"></ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:state_selected="true">
+        <shape>
+            <gradient Android:angle="270" Android:endColor="@color/tsign_tv_assist_blue" Android:startColor="@color/tsign_tv_assist_blue" />
+            <size Android:height="@dimen/button_a_height" />
+            <corners Android:radius="8dp" />
+        </shape>
+    </item>
+    <item Android:state_pressed="true">
+        <shape>
+            <gradient Android:angle="270" Android:endColor="@color/tsign_tv_assist_blue" Android:startColor="@color/tsign_tv_assist_blue" />
+            <size Android:height="@dimen/button_a_height" />
+            <corners Android:radius="8dp" />
+        </shape>
+    </item>
+    <item Android:state_enabled="false">
+        <shape>
+            <gradient Android:angle="270" Android:endColor="@color/tsign_tv_assist_gray" Android:startColor="@color/tsign_tv_assist_gray" />
+            <size Android:height="@dimen/button_a_height" />
+            <corners Android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient Android:angle="270" Android:endColor="@color/tsign_tv_assist_blue" Android:startColor="@color/tsign_tv_assist_blue" />
+            <size Android:height="@dimen/button_a_height" />
+            <corners Android:radius="8dp" />
+        </shape>
+    </item>
+</selector> 

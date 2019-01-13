@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:id = "@+id/rloDlgBack">
+
+    <LinearLayout
+        android:layout_width="200dp" android:layout_height="140dp" android:orientation="vertical"
+        android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_centerInParent="true"
+        android:background="@drawable/dlg_background">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="37dp" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvTitle" style="@style/textview_style_blue16" android:layout_marginLeft="10dp" android:text="选择性别" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style_cline" />
+
+        <LinearLayout android:id="@+id/lobtn_Male" style="@style/layout_style_weight_h1" android:orientation="horizontal" 
+            android:padding="8dp" android:gravity="center_vertical" android:background="@drawable/selector_item_white">
+
+            <ImageView android:id="@+id/ivMale" style="@style/image_style_22" android:layout_marginRight="10dp" android:src="@drawable/icon_sex_male"/>
+            <TextView style="@style/textview_style_black15" android:layout_weight="1" android:text="男"/>
+            <ImageView android:id="@+id/ivCheckMale" style="@style/image_style_20" android:layout_marginRight="4dp" android:src="@drawable/switch_check"/>
+        </LinearLayout>
+        <LinearLayout style="@style/a_layout_style_hline"/>
+        
+        <LinearLayout android:id="@+id/lobtn_Famale" style="@style/layout_style_weight_h1" android:orientation="horizontal" 
+            android:padding="8dp" android:gravity="center_vertical" android:background="@drawable/selector_item_white">
+
+            <ImageView android:id="@+id/ivFamale" style="@style/image_style_22" android:layout_marginRight="10dp" android:src="@drawable/icon_sex_female"/>
+            <TextView style="@style/textview_style_black15" android:layout_weight="1" android:text="女"/>
+            <ImageView android:id="@+id/ivCheckFamale" style="@style/image_style_20" android:layout_marginRight="4dp" android:src="@drawable/switch_check"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
