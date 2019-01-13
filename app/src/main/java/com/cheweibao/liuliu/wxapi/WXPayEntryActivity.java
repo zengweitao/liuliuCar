@@ -256,7 +256,6 @@ public class WXPayEntryActivity extends IDCardActivity implements IWXAPIEventHan
 
         tvPurchaser.setText(getResources().getString(R.string.tv_purchaser) + "：" + info.getRealName());
         // 用于显示的加*身份证
-
         String show_id = info.getIdcard().substring(0, 3) + "********" + info.getIdcard().substring(11, info.getIdcard().length());
         tvIdCard.setText(getResources().getString(R.string.tv_id_card) + "：" + show_id);
         String maskNumber = info.getMobile().substring(0, 3) + "****" + info.getMobile().substring(7, info.getMobile().length());
