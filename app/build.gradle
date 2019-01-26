@@ -85,6 +85,14 @@ android {
         preDexLibraries false
         javaMaxHeapSize "4g"
     }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            universalApk true
+        }
+    }
 }
 repositories {  //这几句代码一定要加    不然会找不到.aar文件
     flatDir {
