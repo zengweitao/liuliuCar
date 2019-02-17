@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.RequiresApi;
-import android.support.v4.content.LocalBroadcastManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,7 +24,6 @@ import com.cheweibao.liuliu.adapter.GridViewCarAdapter;
 import com.cheweibao.liuliu.appraiser.RegisterCityActivity;
 import com.cheweibao.liuliu.common.BaseActivity;
 import com.cheweibao.liuliu.common.ButCommonUtils;
-import com.cheweibao.liuliu.common.MyConstants;
 import com.cheweibao.liuliu.common.PrefUtils;
 import com.cheweibao.liuliu.common.ToastUtil;
 import com.cheweibao.liuliu.common.Utils;
@@ -63,6 +61,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 首页
+ */
 public class AgentMainActivity extends BaseActivity implements OnBannerListener {
 
     @Bind(R.id.banner)
@@ -156,6 +157,7 @@ public class AgentMainActivity extends BaseActivity implements OnBannerListener 
 //                startActivity(intent);
             }
         });
+        //推荐车型item的点击事件
         gvCars.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -166,6 +168,7 @@ public class AgentMainActivity extends BaseActivity implements OnBannerListener 
                 }
             }
         });
+        //二手车item的点击事件
         gvUsedCars.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -176,6 +179,7 @@ public class AgentMainActivity extends BaseActivity implements OnBannerListener 
                 }
             }
         });
+        //自选车型item的点击事件
         gvChooseCars.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

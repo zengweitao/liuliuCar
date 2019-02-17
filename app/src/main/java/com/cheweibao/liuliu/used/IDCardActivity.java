@@ -51,6 +51,8 @@ import cn.tsign.network.enums.Sign.EnumAlgorithm;
 import cn.tsign.network.util.androidCommonMaster.StringUtils;
 
 /**
+ * TODO 这个身份证扫描和人脸识别还没有做
+ * 实名认证的页面（身份证扫描和人脸识别）
  * Created by hasee on 2018/12/18.
  */
 

@@ -41,6 +41,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 贷前审核第一步（四要素的填写）
+ */
+
 public class ToExamineActivity extends BaseActivity {
 
     @Bind(R.id.tvTopTitle)

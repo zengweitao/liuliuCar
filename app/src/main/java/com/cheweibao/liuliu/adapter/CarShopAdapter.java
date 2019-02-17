@@ -8,15 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.cheweibao.liuliu.R;
-import com.cheweibao.liuliu.agent.InfoCarActivity;
-import com.cheweibao.liuliu.common.MyGlobal;
-import com.cheweibao.liuliu.common.Utils;
-import com.cheweibao.liuliu.data.CarModelInfo;
 import com.cheweibao.liuliu.data.ShopInfo;
 
 import java.util.List;

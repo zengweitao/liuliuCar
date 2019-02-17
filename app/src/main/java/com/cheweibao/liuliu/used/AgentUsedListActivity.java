@@ -24,7 +24,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.cheweibao.liuliu.R;
-import com.cheweibao.liuliu.adapter.ChooseCarAdapter;
 import com.cheweibao.liuliu.adapter.ConstellationAdapter;
 import com.cheweibao.liuliu.agent.InfoCarActivity;
 import com.cheweibao.liuliu.agent.SearchActivity;
@@ -62,6 +61,10 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+/**
+ * 二手车页面
+ */
 
 public class AgentUsedListActivity extends BaseActivity {
 
@@ -447,6 +450,7 @@ public class AgentUsedListActivity extends BaseActivity {
                 if (!ButCommonUtils.isFastDoubleClick()) {
                     isfirst = false;
                     Intent intent = new Intent(mContext, InfoUsedCarActivity.class);
+//                    Intent intent = new Intent(mContext, InfoCarActivity.class);
                     intent.putExtra("info", choosearadapter.getItem(position));
                     mContext.startActivity(intent);
                 }

@@ -66,6 +66,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 自选页面
+ */
+
 public class AgentListActivity extends BaseActivity {
 
     Context context;

@@ -41,12 +41,13 @@ public class ModelUsedDetailInfo implements Serializable {
     public String storeDistrictCode;//
     public String storeName;//门店名称
     public String storePhone;//门店联系方式
-    public String storeAddress;//门店联系方式
+    public String storeAddress;//门店联系地址
 
     public String carInfo;//
     public String imgList;//
     public String inspectList;//检测项,json字符串
     public String report;//车辆基本信息,json字符串
+
 
     public String getId() {
         return id;

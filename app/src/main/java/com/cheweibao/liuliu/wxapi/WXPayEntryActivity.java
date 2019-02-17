@@ -50,6 +50,7 @@ import carraydraw.com.coutdowntimelibrary.countdown.CountDownUtil;
 import carraydraw.com.coutdowntimelibrary.countdown.CountDownView;
 
 /**
+ * 支付宝微信支付页面
  * Created by unknow on 2018/5/31.
  */
 
@@ -435,7 +436,7 @@ public class WXPayEntryActivity extends IDCardActivity implements IWXAPIEventHan
         public void handleMessage(Message msg) {
             hideProgress();
             switch (msg.what) {
-                case 0:
+                case 0://订单支付成功
                     @SuppressWarnings("unchecked")
                     HashMap<String, Object> result = (HashMap<String, Object>) msg.obj;
                     try {
@@ -604,6 +605,7 @@ public class WXPayEntryActivity extends IDCardActivity implements IWXAPIEventHan
                         Gson gson = new Gson();
                         ResultInfo info = gson.fromJson(resultInfo, ResultInfo.class);
                         ToastUtil.showToast("支付成功");
+                        //再调取后台查询该笔订单是否支付成功
                         payInfoSave(info.getAlipay_trade_app_pay_response().getTrade_no());
                     } else {
                         // 该笔订单真实的支付结果，需要依赖服务端的异步通知。

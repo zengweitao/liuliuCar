@@ -64,13 +64,13 @@ public class ServerUrl {
     public final static String config = "/mobile/loan/pre/config";//材料配置
     public final static String secondStepsReject = "/mobile/loan/pre/secondStepsReject";//第二步审核回显
     //业务员
-    public final static String getModelList = "mobile/car/getModelList";
-    public final static String getUsedModelList = "mobile/usedCar/getModelList";
+    public final static String getModelList = "mobile/car/getModelList";//首页推荐车列表
+    public final static String getUsedModelList = "mobile/usedCar/getModelList";//首页二手车列表
     public final static String modelDetail = "mobile/car/modelDetail";//车辆详情
     public final static String modelUsedDetail = "mobile/car/usedCarModelDetail";//二手车辆详情
     public final static String getModelDoorList = "mobile/door/getModelDoorList";//车辆详情
     public final static String getAppCarSelfList = "mobile/car/getAppCarSelfList";
-    public final static String getAppUsedCarSelfList = "mobile/car/getAppUsedCarSelfList";
+    public final static String getAppUsedCarSelfList = "mobile/car/getAppUsedCarSelfList";//二手车的车辆列表
     public final static String getModelConfigList = "mobile/car/getModelConfigList";
 
     public final static String userOrderDetail = "mobile/order/userOrderDetail";//订单详情

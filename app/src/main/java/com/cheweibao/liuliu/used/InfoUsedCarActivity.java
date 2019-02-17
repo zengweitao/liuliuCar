@@ -19,20 +19,14 @@ import com.cheweibao.liuliu.R;
 import com.cheweibao.liuliu.adapter.GridViewDefaultAdapter;
 import com.cheweibao.liuliu.adapter.ProgrammeAdapter;
 import com.cheweibao.liuliu.adapter.VehicleConfigurationAdapter;
-import com.cheweibao.liuliu.agent.ShopListActivity;
 import com.cheweibao.liuliu.agent.TransitionActivity;
-import com.cheweibao.liuliu.agent.VeConListActivity;
 import com.cheweibao.liuliu.common.BaseActivity;
 import com.cheweibao.liuliu.common.ButCommonUtils;
 import com.cheweibao.liuliu.common.ImagePagerActivity;
-import com.cheweibao.liuliu.common.PrefUtils;
 import com.cheweibao.liuliu.common.ToastUtil;
 import com.cheweibao.liuliu.common.Utils;
-import com.cheweibao.liuliu.data.BannerInfo;
 import com.cheweibao.liuliu.data.CarModelInfo;
 import com.cheweibao.liuliu.data.DefaultInfo;
-import com.cheweibao.liuliu.data.FinanceInfo;
-import com.cheweibao.liuliu.data.ModelDetailInfo;
 import com.cheweibao.liuliu.data.ModelUsedDetailInfo;
 import com.cheweibao.liuliu.data.OrderInfo;
 import com.cheweibao.liuliu.data.ReportInfo;
@@ -43,7 +37,6 @@ import com.cheweibao.liuliu.examine.ToExamineActivity;
 import com.cheweibao.liuliu.examine.ToExamineOneActivity;
 import com.cheweibao.liuliu.main.LoginActivity;
 import com.cheweibao.liuliu.net.ServerUrl;
-import com.cheweibao.liuliu.ui.BaseGridView;
 import com.cheweibao.liuliu.ui.BaseListView;
 import com.cheweibao.liuliu.ui.ClickEffectImageView;
 import com.cheweibao.liuliu.ui.GlideImageLoader;
@@ -54,7 +47,7 @@ import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 import com.youth.banner.listener.OnBannerListener;
 
-import org.w3c.dom.Text;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -65,7 +58,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
+/**这个也是车辆详情页（点击首页和二手车页面的车辆跳到这个页面）
+ * 这个Activity和InfoCarActivity差不多，请留意
  * Created by unknow on 2018/5/31.
  */
 
@@ -302,7 +296,12 @@ public class InfoUsedCarActivity extends BaseActivity implements OnBannerListene
             case RESULT_CODE:
                 if (data != null) {
                     ShopInfo result = (ShopInfo) data.getSerializableExtra("shop");
-                    tvCarStore.setText(result.getChannleName());
+//                    tvCarStore.setText(result.getChannleName());
+                    if (TextUtils.isEmpty(result.getChannleName())||"null".equals(result.getChannleName())) {
+                        tvCarStore.setText("--");
+                    }else {
+                        tvCarStore.setText(result.getChannleName());
+                    }
                     orderInfo.setStoreId(result.getId());
                 }
                 break;
@@ -446,28 +445,30 @@ public class InfoUsedCarActivity extends BaseActivity implements OnBannerListene
                         String message = result.get("desc") + "";
                         orderInfo.setCarId(info.getId());
                         orderInfo.setCarType(info.getCarType());
-                        if (TextUtils.isEmpty(orderInfo.getStoreId())) {
+                        //TextUtils.isEmpty(orderInfo.getStoreId())
+                        if (StringUtils.isEmpty(modelDetailinfo.getStoreName())||"null".equals(modelDetailinfo.getStoreName())
+                       || "null".equals(modelDetailinfo.getStoreAddress()) ||TextUtils.isEmpty(modelDetailinfo.getStoreAddress())) {
                             ToastUtil.showToast("当前车辆没有门店信息...");
-                        } else if ("SYS0008".equals(status)) {
+                        } else if ("SYS0008".equals(status)) {//用户未登录
                             ToastUtil.showToast(message);
                             baselogout();
                             it = new Intent(mContext, LoginActivity.class);
                             startActivity(it);
                             hideProgress();
                             return;
-                        } else if ("LOANPRE0008".equals(status)) {
+                        } else if ("LOANPRE0008".equals(status)) {//贷前审核被拒绝
                             it = new Intent(mContext, TransitionActivity.class);
                             it.putExtra("style", 3);
                             startActivity(it);
-                        } else if ("LOANPRE0002".equals(status)) {
+                        } else if ("LOANPRE0002".equals(status)) {//贷前审核第一步
                             it = new Intent(mContext, ToExamineActivity.class);
                             it.putExtra("orderInfo", orderInfo);
                             startActivity(it);
-                        } else if ("1".equals(status) || "LOANPRE0005".equals(status)) {
+                        } else if ("1".equals(status) || "LOANPRE0005".equals(status)) {//跳转到我的订单第二步
                             it = new Intent(mContext, ToExamineOneActivity.class);
                             it.putExtra("orderInfo", orderInfo);
                             startActivity(it);
-                        } else if ("LOANPRE0006".equals(status)) {
+                        } else if ("LOANPRE0006".equals(status)) {//跳转到我的订单第二步
                             if (!TextUtils.isEmpty(id)) {
                                 orderInfo.setId(id);
                                 it = new Intent(mContext, ToExamineOneActivity.class);
@@ -478,7 +479,7 @@ public class InfoUsedCarActivity extends BaseActivity implements OnBannerListene
                                 ToastUtil.showToast("审核资料有误，请到我的订单处理");
 //                                ToastUtil.showToast(message);
                             }
-                        } else if ("2".equals(status)) {
+                        } else if ("2".equals(status)) {//注意，一个用户只能买一辆车，当这辆车的贷款还完后才能买第二辆
                             ToastUtil.showToast("当前已有订单正在进行中,请前去处理");
                         } else {
                             ToastUtil.showToast(message);
@@ -497,7 +498,11 @@ public class InfoUsedCarActivity extends BaseActivity implements OnBannerListene
     };
 
     private void setCity(ShopInfo result) {
-        tvCarStore.setText(result.getChannleName());
+        if (TextUtils.isEmpty(result.getChannleName())||"null".equals(result.getChannleName())) {
+            tvCarStore.setText("--");
+        }else {
+            tvCarStore.setText(result.getChannleName());
+        }
         orderInfo.setStoreId(result.getId());
     }
 

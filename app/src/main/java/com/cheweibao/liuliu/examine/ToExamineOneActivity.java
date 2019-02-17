@@ -78,6 +78,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
+/**
+ * 贷前审核第二步（个人婚姻、最高学历、单位名称、单位地址、单位电话等信息的填写）
+ */
 public class ToExamineOneActivity extends BaseActivity implements SelectAreaPopWindow.OnSelectListener {
     private final int SDK_PERMISSION_REQUEST = 127;
     @Bind(R.id.tvTopTitle)

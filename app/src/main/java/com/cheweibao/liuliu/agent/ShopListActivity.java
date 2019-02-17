@@ -53,6 +53,10 @@ import butterknife.OnClick;
 
 import static com.cheweibao.liuliu.common.MyGlobal.context;
 
+/**
+ * 门店选择页面（订单确认页面里点击购买门店）
+ */
+
 public class ShopListActivity extends BaseActivity {
     final int RESULT_CODE = 0x101;
     List<ShopInfo> shoplist = new ArrayList<>();

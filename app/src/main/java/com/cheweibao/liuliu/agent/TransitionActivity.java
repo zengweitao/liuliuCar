@@ -11,7 +11,6 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,6 +25,10 @@ import com.cheweibao.liuliu.wxapi.WXPayEntryActivity;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+/**
+ * 贷前审核结果页面、支付结果页等，结果展示的页面
+ */
 
 public class TransitionActivity extends BaseActivity {
 
@@ -147,7 +150,7 @@ public class TransitionActivity extends BaseActivity {
                     case 7:
                         finish();
                         break;
-                    case 2:
+                    case 2://贷前审核通过跳到订单确认页面（支付）
                         if (!ButCommonUtils.isFastDoubleClick()) {
                             intent = new Intent(mContext, WXPayEntryActivity.class);
                             intent.putExtra("style", 1);

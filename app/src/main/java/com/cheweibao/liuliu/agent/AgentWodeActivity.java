@@ -61,6 +61,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
+/**
+ * 我的页面
+ */
+
 public class AgentWodeActivity extends BaseActivity {
 
     private static final int REQ_PERMISSION = 2001;
@@ -619,18 +623,18 @@ public class AgentWodeActivity extends BaseActivity {
                     HashMap<String, Object> result = (HashMap<String, Object>) msg.obj;
                     try {
                         String status = result.get("code") + "";
-                        if ("0".equals(status)) {
+                        if ("0".equals(status)) {//网络请求成功
                             Gson gson = new Gson();
                             JSONObject data = JSON.parseObject(gson.toJson(result.get("result")));
-                            if (data != null && !TextUtils.isEmpty(data + "")) {
+                            if (data != null && !TextUtils.isEmpty(data + "")) {//跳转到还款列表页面
                                 Intent it = new Intent(mContext, RepaymentActivity.class);
                                 startActivity(it);
-                            } else {
+                            } else {//网络请求没有数据，跳转到无数据页面
                                 Intent it = new Intent(mContext, TransitionActivity.class);
                                 it.putExtra("style", 7);
                                 startActivity(it);
                             }
-                        } else if ("LOANPRE00033".equals(status)) {
+                        } else if ("LOANPRE00033".equals(status)) {//网络请求失败
                             Intent it = new Intent(mContext, TransitionActivity.class);
                             it.putExtra("style", 7);
                             startActivity(it);

@@ -57,6 +57,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 车辆详情页面（点击首页、自选的车辆都跳到这个页面）
  * Created by unknow on 2018/5/31.
  */
 
@@ -196,7 +197,7 @@ public class InfoCarActivity extends BaseActivity implements OnBannerListener {
         if (modelDetailinfo.getImage().size() > 0) {
             setBanner(modelDetailinfo.getImage());
         }
-        if ("2".equals(modelDetailinfo.getCarType())) {
+        if ("2".equals(modelDetailinfo.getCarType())) {//渠道车
             llCarStore.setEnabled(false);
             ShopInfo shopinfo = new ShopInfo();
             shopinfo.setChannleName(modelDetailinfo.getChannleName());
@@ -204,7 +205,7 @@ public class InfoCarActivity extends BaseActivity implements OnBannerListener {
             shopinfo.setDetailAddress(modelDetailinfo.getDetailAddress());
             imgCarStore.setVisibility(View.GONE);
             setCity(shopinfo);
-        } else {
+        } else {//集采车
             llCarStore.setEnabled(true);
             getInfo();
         }
